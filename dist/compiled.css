@@ -645,3 +645,83 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 4;
   object-fit: cover;
 }
+
+.plank1 {
+  position: absolute;
+  background-size: cover;
+  width: 19%;
+  height: 19%;
+  top: 55%;
+  left: 63%;
+  z-index: 5;
+  text-shadow: 4.5px solid #4f432f;
+}
+
+.plank2 {
+  position: absolute;
+  background-size: cover;
+  width: 19%;
+  height: 19%;
+  top: 67.5%;
+  left: 63%;
+  z-index: 5;
+  text-shadow: 4.5px solid #4f432f;
+}
+
+.plank3 {
+  position: absolute;
+  background-size: cover;
+  width: 19%;
+  height: 19%;
+  top: 80%;
+  left: 63%;
+  z-index: 5;
+  text-shadow: 4.5px solid #4f432f;
+}
+
+.wordregister {
+  position: absolute;
+  width: 219px;
+  height: 48px;
+  left: calc(50% - 219px / 2 + 7.5px);
+  top: calc(50% - 48px / 2);
+
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 4px solid #000000;
+}
+
+.logo {
+  position: relative;
+  width: 45%;
+  height: 45%;
+  left: 50%;
+  top: 0%;
+  text-shadow: 5px solid #251e16;
+  z-index: 5;
+}
+
+.postbr {
+  position: absolute;
+  width: 17.4px;
+  height: 415.36px;
+  left: 79%;
+  top: 50%;
+  text-shadow: 3px solid #654e44;
+}
+
+.postbl {
+  position: absolute;
+  width: 17.4px;
+  height: 415.36px;
+  left: 65%;
+  top: 50%;
+  text-shadow: 3px solid #654e44;
+}
