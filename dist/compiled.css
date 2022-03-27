@@ -599,6 +599,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .backgroundFixed {
   position: absolute;
-  top: 40%;
   left: 0%;
+  bottom: 0%;
 }
