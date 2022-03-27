@@ -597,8 +597,43 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-decoration-line: underline;
 }
 
-.backgroundFixed {
-  position: absolute;
-  left: 0%;
-  bottom: 0%;
+.background {
+  background-image: url('../assets/Space.svg');
+}
+.aurora-glow {
+  position: absolute; 
+  left: 0%; 
+  bottom: 35%; 
+  z-index: 1;
+  object-fit: cover;
+}
+.aurora {
+  position: absolute; 
+  left: 0%; 
+  bottom: 30%; 
+  z-index: 2;
+  object-fit: contain;
+  max-width: 75%;
+  max-height: auto;
+}
+.furthest-mountain {
+  position: absolute; 
+  left: 0%; 
+  bottom: 0%; 
+  z-index: 1;
+}
+
+.middle-mountain {
+  position: absolute; 
+  left: 0%; 
+  bottom: 0%; 
+  z-index: 2;
+  object-fit: cover;
+}
+.closest-mountain {
+  position: absolute; 
+  left: 0%; 
+  bottom: 0%; 
+  z-index: 3;
+  object-fit: cover;
 }
