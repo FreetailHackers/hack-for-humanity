@@ -596,3 +596,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
 }
+
+.backgroundFixed {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+}
