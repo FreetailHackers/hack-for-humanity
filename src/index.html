@@ -21,24 +21,31 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Learnathon 2022</title>
   </head>
-  <body style="background-image: url('../assets/Space.svg')">
-    <img src="../assets/Aurora Glow.svg" />
-    <img
-      style="position: absolute; left: 0%; bottom: 0%; z-index: 1"
-      src="../assets/Furthest Mountain.svg"
-    />
-    <img
-      style="position: absolute; left: 0%; bottom: 0%; z-index: 2"
-      src="../assets/Middle Mountain.svg"
-    />
-    <img
-      style="position: absolute; left: 0%; bottom: 0%; z-index: 3"
-      src="../assets/Closest Mountain.svg"
-    />
-    <img
-      style="position: absolute; left: 0%; bottom: 0%; z-index: 4"
-      src="../assets/Snow Foreground.svg"
-    />
+  <body class="background">
+    <div class="aurora-elements">
+      <div class="aurora-glow">
+        <img src="../assets/Aurora Glow.svg" />
+      </div>
+      <div class="aurora">
+        <img src="../assets/Aurora.svg" />
+      </div>
+    </div>
+    <div class="mountains">
+      <div class="furthest-mountain">
+        <img src="../assets/Furthest Mountain.svg" />
+      </div>
+      <div class="middle-mountain">
+        <img src="../assets/Middle Mountain.svg" />
+      </div>
+      <div class="closest-mountain">
+        <img src="../assets/Closest Mountain.svg" />
+      </div>
+    </div>
+    <div class="foreground-snow">
+    <img src="../assets/Snow Foreground.svg" />
+    </div>
+  </div>
+</body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
