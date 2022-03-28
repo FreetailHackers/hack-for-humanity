@@ -1,3 +1,4 @@
+   
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
@@ -646,38 +647,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   object-fit: cover;
 }
 
-.plank1 {
-  position: absolute;
-  background-size: cover;
-  width: 19%;
-  height: 19%;
-  top: 55%;
-  left: 63%;
-  z-index: 5;
-  text-shadow: 4.5px solid #4f432f;
-}
 
-.plank2 {
-  position: absolute;
-  background-size: cover;
-  width: 19%;
-  height: 19%;
-  top: 67.5%;
-  left: 63%;
-  z-index: 5;
-  text-shadow: 4.5px solid #4f432f;
-}
-
-.plank3 {
-  position: absolute;
-  background-size: cover;
-  width: 19%;
-  height: 19%;
-  top: 80%;
-  left: 63%;
-  z-index: 5;
-  text-shadow: 4.5px solid #4f432f;
-}
 
 .wordregister {
   position: absolute;
@@ -698,30 +668,84 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-shadow: 4px solid #000000;
 }
 
-.logo {
-  position: relative;
-  width: 45%;
-  height: 45%;
-  left: 50%;
-  top: 0%;
-  text-shadow: 5px solid #251e16;
-  z-index: 5;
-}
 
 .postbr {
   position: absolute;
-  width: 17.4px;
-  height: 415.36px;
-  left: 79%;
-  top: 50%;
+  width: 3%;
+  left: 32%;
+  top: 40%;
   text-shadow: 3px solid #654e44;
+  z-index: 4;
 }
 
 .postbl {
   position: absolute;
-  width: 17.4px;
-  height: 415.36px;
-  left: 65%;
-  top: 50%;
+  width: 3%;
+  left: 52%;
+  top: 40%;
   text-shadow: 3px solid #654e44;
+  z-index: 4;
 }
+
+.signboard {
+    position: absolute;
+    width: 50vw;
+    height: 99vh;
+    top: 0%;
+    left: 40%;
+} 
+
+@media only screen and (max-width: 670px) {
+    .signboard {
+        width: 99vh;
+        height: 99vh;
+        top: 0%;
+      } 
+}
+
+.logo {
+    position: relative;
+    width:85%;
+    left: 0%;
+    top: 0%;
+    text-shadow: 5px solid #251e16;
+    z-index: 5;
+  }
+
+  .planks {
+      position: relative;
+      padding-top: 50%;
+  }
+
+  #plank1 {
+    position: absolute;
+    background-size: cover;
+    width: 32%;
+    top: 5%;
+    left: 27%;
+    z-index: 5;
+    text-shadow: 4.5px solid #4f432f;
+  }
+  
+  #plank2 {
+    position: absolute;
+    background-size: cover;
+    width: 32%;
+    top: 30%;
+    left: 27%;
+    z-index: 5;
+    text-shadow: 4.5px solid #4f432f;
+  }
+  
+  #plank3 {
+    position: absolute;
+    background-size: cover;
+    width: 32%;
+    top: 55%;
+    left: 27%;
+    z-index: 5;
+    text-shadow: 4.5px solid #4f432f;
+  }
+
+
+
