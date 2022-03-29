@@ -3,13 +3,31 @@
 @tailwind utilities;
 
 .website {
-  width: 500vw;
+  width: 480vw;
   height: 95vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .background {
   background-image: url("../assets/Space.svg");
   background-size: cover;
+}
+
+.secondScreen {
+  left: 100%;
+}
+
+.thirdScreen {
+  left: 200%;
+}
+
+.fourthScreen {
+  left: 300%;
+}
+
+.fifthScreen {
+  left: 400%;
 }
 
 .mountains {
@@ -44,6 +62,9 @@
   z-index: 4;
 }
 
+.penguin {
+  z-index: 1000;
+}
 .sign-parent {
   position: absolute;
   width: 90%;
@@ -129,4 +150,8 @@
   left: 1%;
   position: absolute;
   z-index: 6;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
