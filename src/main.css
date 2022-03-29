@@ -1,3 +1,132 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.website {
+  width: 500vw;
+  height: 95vh;
+}
+
+.background {
+  background-image: url("../assets/Space.svg");
+  background-size: cover;
+}
+
+.mountains {
+  height: 60%;
+  position: absolute;
+  bottom: 0%;
+
+  display: grid;
+  grid-template-columns: 100% 1fr;
+  grid-template-rows: 100% 1fr;
+
+  align-items: end;
+}
+
+.furthest-mountain {
+  grid-area: 1/1/2/2;
+}
+
+.middle-mountain {
+  grid-area: 1/1/2/2;
+}
+
+.closest-mountain {
+  grid-area: 1/1/2/2;
+}
+
+.foreground-snow {
+  grid-area: 1/1/2/2;
+}
+
+.auroraElements {
+  z-index: 4;
+}
+
+.sign-parent {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  z-index: 99;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  z-index: 5;
+  width: 60%;
+  height: 60%;
+  top: 5%;
+}
+
+.signboard {
+  z-index: 5;
+  height: 70%;
+  width: 70%;
+}
+
+.upperRope-parent {
+  position: absolute;
+  z-index: 3;
+  width: 30%;
+  height: 40%;
+  top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rope-parent {
+  position: absolute;
+  bottom: 5%;
+  z-index: 3;
+  width: 20%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.postbl {
+  z-index: 4;
+  height: 100%;
+}
+
+.postbr {
+  z-index: 4;
+  height: 100%;
+}
+
+.planks {
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  height: 10%;
+  width: 25%;
+}
+
+.plank1 {
+  padding-top: 40%;
+  position: absolute;
+  z-index: 6;
+}
+
+.plank2 {
+  padding-top: 70%;
+  width: 105%;
+  left: 1%;
+  position: absolute;
+  z-index: 6;
+}
+
+.plank3 {
+  padding-top: 100%;
+  width: 105%;
+  left: 1%;
+  position: absolute;
+  z-index: 6;
+}
