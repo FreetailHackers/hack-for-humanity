@@ -108,30 +108,32 @@
   position: relative;
   left: 70vh;
   top: 0;
-  z-index: 100;
   width: 80vh;
 }
 
 .logo {
+  position: relative;
+  z-index: 100;
   width: 100%;
 }
 
 .planks {
-  position: relative;
-  z-index: 200;
   width: 40%;
   margin: 0 auto;
 }
 
 .plank,
 .plank img {
+  position: relative;
+  z-index: 105;
+
   width: 100%;
 }
 
 .smallRopes,
 .bigRopes {
   position: relative;
-  z-index: -1;
+  z-index: 85;
   width: 100%;
 }
 
@@ -148,6 +150,8 @@
 }
 
 .smallRopes:first-of-type {
+  position: relative;
+  z-index: 85;
   margin-top: -30%;
 }
 
@@ -164,6 +168,8 @@
   color: white;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     2px 2px 0 #000;
+  position: relative;
+  z-index: 105;
 }
 
 .info a {
