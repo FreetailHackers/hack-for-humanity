@@ -99,7 +99,7 @@
 
 .sign-parent {
   position: relative;
-  left: 30%;
+  left: 70vh;
   top: 0;
   z-index: 100;
   width: 80vh;
@@ -160,6 +160,7 @@
 }
 
 .info a {
+  position: absolute;
   color: white;
 }
 
@@ -168,7 +169,20 @@
 }
 
 @media (max-width: 1000px) {
+  .website {
+    width: 600vw;
+  }
+
   .sign-parent {
-    left: 90%;
+    left: 70%;
+  }
+
+  .info a {
+    background-color: red;
+    left: 100vh;
+  }
+
+  .mountains {
+    width: 600%;
   }
 }
