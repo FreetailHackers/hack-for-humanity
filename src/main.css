@@ -3,31 +3,37 @@
 @tailwind utilities;
 
 .website {
+  overflow: hidden;
   width: 500vw;
-  height: 100vh;
+  height: 100%;
+  margin: 0;
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .secondScreen {
   position: absolute;
-  left: 100%;
+  left: 100vmax;
 }
 
 .thirdScreen {
   position: absolute;
-  left: 200%;
+  left: 200vmax;
 }
 
 .fourthScreen {
   position: absolute;
-  left: 300%;
+  left: 300vmax;
 }
 
 .fifthScreen {
   position: absolute;
-  left: 400%;
+  left: 400vmax;
 }
 
 .space {
@@ -59,7 +65,7 @@
 .furthest-mountain {
   background-repeat: repeat-x;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   background-image: url("../assets/Furthest Mountain.svg");
   background-position: bottom;
 }
@@ -67,7 +73,7 @@
 .middle-mountain {
   background-repeat: repeat-x;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   background-image: url("../assets/Middle\ Mountain.svg");
   background-position: bottom;
 }
@@ -75,7 +81,7 @@
 .closest-mountain {
   background-repeat: repeat-x;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   background-image: url("../assets/Closest\ Mountain.svg");
   background-position: bottom;
 }
@@ -83,7 +89,7 @@
 .foreground-snow {
   background-repeat: repeat-x;
   width: 100%;
-  height: 30vh;
+  height: 100vh;
   background-image: url("../assets/Snow\ Foreground.png");
   background-position: bottom;
 }
@@ -91,9 +97,10 @@
 .penguin {
   transform-origin: bottom left;
   transform: scale(1.3);
-  width: auto;
+  width: 80vh;
   z-index: 101;
   position: absolute;
+  left: -1%;
   bottom: 0;
 }
 
@@ -160,6 +167,7 @@
 }
 
 .info a {
+  left: 40vmax;
   position: absolute;
   color: white;
 }
@@ -173,16 +181,20 @@
     width: 600vw;
   }
 
+  .penguin {
+    transform: scale(1.2);
+  }
+
   .sign-parent {
     left: 70%;
   }
 
   .info a {
     background-color: red;
-    left: 100vh;
+    left: 50vmax;
   }
 
   .mountains {
-    width: 600%;
+    width: 600vmax;
   }
 }
