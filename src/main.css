@@ -3,155 +3,172 @@
 @tailwind utilities;
 
 .website {
-  width: 480vw;
-  height: 95vh;
+  width: 500vw;
+  height: 100vh;
   display: flex;
   flex-direction: row;
-}
-
-.background {
-  background-image: url("../assets/Space.svg");
-  background-size: cover;
+  overflow-x: hidden;
 }
 
 .secondScreen {
+  position: absolute;
   left: 100%;
 }
 
 .thirdScreen {
+  position: absolute;
   left: 200%;
 }
 
 .fourthScreen {
+  position: absolute;
   left: 300%;
 }
 
 .fifthScreen {
+  position: absolute;
   left: 400%;
 }
 
-.mountains {
-  height: 60%;
-  position: absolute;
-  bottom: 0%;
-
-  display: grid;
-  grid-template-columns: 100% 1fr;
-  grid-template-rows: 100% 1fr;
-
-  align-items: end;
-}
-
-.furthest-mountain {
-  grid-area: 1/1/2/2;
-}
-
-.middle-mountain {
-  grid-area: 1/1/2/2;
-}
-
-.closest-mountain {
-  grid-area: 1/1/2/2;
-}
-
-.foreground-snow {
-  grid-area: 1/1/2/2;
+.space {
+  z-index: -99;
+  position: fixed;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/Space.svg");
+  background-size: cover;
+  left: 0;
 }
 
 .auroraElements {
-  z-index: 4;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: -40%;
+  width: 100%;
+}
+
+.mountains {
+  width: 500%;
+  position: absolute;
+  bottom: 0%;
+}
+
+.furthest-mountain {
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 60vh;
+  background-image: url("../assets/Furthest Mountain.svg");
+  background-position: bottom;
+}
+
+.middle-mountain {
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 60vh;
+  background-image: url("../assets/Middle\ Mountain.svg");
+  background-position: bottom;
+}
+
+.closest-mountain {
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 60vh;
+  background-image: url("../assets/Closest\ Mountain.svg");
+  background-position: bottom;
+}
+
+.foreground-snow {
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 30vh;
+  background-image: url("../assets/Snow\ Foreground.png");
+  background-position: bottom;
 }
 
 .penguin {
-  z-index: 1000;
-}
-.sign-parent {
+  transform-origin: bottom left;
+  transform: scale(1.3);
+  width: auto;
+  z-index: 101;
   position: absolute;
-  width: 90%;
-  height: 90%;
-  z-index: 99;
+  bottom: 0;
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sign-parent {
+  position: relative;
+  left: 30%;
+  top: 0;
+  z-index: 100;
+  width: 80vh;
 }
 
 .logo {
-  position: absolute;
-  z-index: 5;
-  width: 60%;
-  height: 60%;
-  top: 5%;
-}
-
-.signboard {
-  z-index: 5;
-  height: 70%;
-  width: 70%;
-}
-
-.upperRope-parent {
-  position: absolute;
-  z-index: 3;
-  width: 30%;
-  height: 40%;
-  top: 1%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.rope-parent {
-  position: absolute;
-  bottom: 5%;
-  z-index: 3;
-  width: 20%;
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.postbl {
-  z-index: 4;
-  height: 100%;
-}
-
-.postbr {
-  z-index: 4;
-  height: 100%;
+  width: 100%;
 }
 
 .planks {
-  z-index: 99;
-  position: absolute;
-  display: flex;
-  height: 10%;
-  width: 25%;
+  position: relative;
+  z-index: 200;
+  width: 40%;
+  margin: 0 auto;
 }
 
-.plank1 {
-  padding-top: 40%;
-  position: absolute;
-  z-index: 8;
+.plank,
+.plank img {
+  width: 100%;
 }
 
-.plank2 {
-  padding-top: 70%;
-  width: 105%;
-  left: 1%;
-  position: absolute;
-  z-index: 7;
+.smallRopes,
+.bigRopes {
+  position: relative;
+  z-index: -1;
+  width: 100%;
 }
 
-.plank3 {
-  padding-top: 100%;
-  width: 105%;
-  left: 1%;
-  position: absolute;
-  z-index: 6;
+.bigRopes {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: -15%;
+}
+
+.upperBigRopes {
+  width: 60%;
+  margin: 0 auto;
+  top: 0%;
+}
+
+.smallRopes:first-of-type {
+  margin-top: -30%;
+}
+
+.plank p {
+  margin-top: -25%;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 5vh;
+  line-height: 43px;
+  color: white;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+.info a {
+  color: white;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 1000px) {
+  .sign-parent {
+    left: 90%;
+  }
 }
