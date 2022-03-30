@@ -18,22 +18,22 @@
 
 .secondScreen {
   position: absolute;
-  left: 100vmax;
+  left: 130vh;
 }
 
 .thirdScreen {
   position: absolute;
-  left: 200vmax;
+  left: 250vh;
 }
 
 .fourthScreen {
   position: absolute;
-  left: 300vmax;
+  left: 380vh;
 }
 
 .fifthScreen {
   position: absolute;
-  left: 400vmax;
+  left: 460vh;
 }
 
 .space {
@@ -172,9 +172,13 @@
   z-index: 105;
 }
 
+.info {
+  width: 50vh;
+  text-align: center;
+}
+
 .info a {
-  left: 40vmax;
-  position: absolute;
+  position: relative;
   color: white;
 }
 
@@ -182,7 +186,7 @@
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .website {
     width: 600vw;
   }
@@ -195,9 +199,8 @@
     left: 70%;
   }
 
-  .info a {
-    background-color: red;
-    left: 50vmax;
+  .info {
+    left: 100vmax;
   }
 
   .mountains {
