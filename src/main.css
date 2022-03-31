@@ -4,7 +4,7 @@
 
 .website {
   overflow: hidden;
-  width: 500vw;
+  width: 600vw;
   height: 100%;
   margin: 0;
   display: flex;
@@ -18,22 +18,22 @@
 
 .secondScreen {
   position: absolute;
-  left: 130vh;
+  left: 150vh;
 }
 
 .thirdScreen {
   position: absolute;
-  left: 250vh;
+  left: 270vh;
 }
 
 .fourthScreen {
   position: absolute;
-  left: 380vh;
+  left: 400vh;
 }
 
 .fifthScreen {
   position: absolute;
-  left: 460vh;
+  left: 480vh;
 }
 
 .space {
@@ -57,7 +57,7 @@
 }
 
 .mountains {
-  width: 500%;
+  width: 350%;
   position: absolute;
   bottom: 0%;
 }
@@ -106,7 +106,7 @@
 
 .sign-parent {
   position: relative;
-  left: 70vh;
+  left: 60vh;
   top: 0;
   width: 80vh;
 }
@@ -156,18 +156,18 @@
 }
 
 .plank p {
-  margin-top: -25%;
+  margin-top: -23%;
   margin-bottom: 0;
   width: 100%;
   text-align: center;
   font-family: "ABeeZee";
   font-style: italic;
   font-weight: 400;
-  font-size: 5vh;
+  font-size: 300%;
   line-height: 43px;
   color: white;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
-    2px 2px 0 #000;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
   position: relative;
   z-index: 105;
 }
@@ -182,13 +182,9 @@
   color: white;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 @media (max-width: 1200px) {
   .website {
-    width: 600vw;
+    width: 700vw;
   }
 
   .penguin {
@@ -203,6 +199,10 @@
     left: 100vmax;
   }
 
+  .secondParagraph {
+    position: relative;
+    left: 80%;
+  }
   .mountains {
     width: 600vmax;
   }
