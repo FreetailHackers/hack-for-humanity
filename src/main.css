@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: ABeeZee-Italic;
+  src: url(../assets/fonts/ABeeZee-Italic.ttf);
+}
+
+@font-face {
+  font-family: ABeeZee;
+  src: url(../assets/fonts/ABeeZee-Regular.ttf);
+}
+
 .website {
   overflow: hidden;
   width: 600vw;
@@ -106,7 +116,7 @@
 
 .sign-parent {
   position: relative;
-  left: 60vh;
+  left: 90vh;
   top: 0;
   width: 80vh;
 }
@@ -126,7 +136,7 @@
 .plank img {
   position: relative;
   z-index: 105;
-
+  
   width: 100%;
 }
 
@@ -156,14 +166,14 @@
 }
 
 .plank p {
-  margin-top: -23%;
+  margin-top: -70px;
   margin-bottom: 0;
   width: 100%;
   text-align: center;
   font-family: "ABeeZee";
   font-style: italic;
   font-weight: 400;
-  font-size: 300%;
+  font-size: 35px;
   line-height: 43px;
   color: white;
   text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
