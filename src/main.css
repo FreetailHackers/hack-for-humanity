@@ -136,21 +136,27 @@
 .plank img {
   position: relative;
   z-index: 105;
-  
   width: 100%;
+
+}
+.plank:hover {
+  transform:scale(1.1);
 }
 
 .smallRopes,
 .bigRopes {
+  
   position: relative;
   z-index: 85;
-  width: 100%;
+  left:10%;
+  width: 80%;
 }
 
 .bigRopes {
   width: 60%;
   margin: 0 auto;
   margin-bottom: -15%;
+  left:0% !important
 }
 
 .upperBigRopes {
@@ -185,11 +191,12 @@
   position:relative;
   width: 50vh;
   text-align: center;
-}
-
-.info a {
-  position: relative;
+  font-family: "ABeeZee";
+  font-weight: 200;
   color: white;
+  background:rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+    
 }
 
 .penguins {
