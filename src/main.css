@@ -198,6 +198,24 @@
   width:100%;
 }
 
+.igloo {
+  transform: scale(1.2);
+  position: absolute;
+  width:100%;
+}
+
+.sign {
+  position: absolute;
+  transform: scale(0.3);
+  width:100%;
+}
+
+.rocks {
+  position: absolute;
+  transform: scale(0.7);
+  width:100%;
+}
+
 @media (max-width: 1200px) {
   .website {
     width: 700vw;
@@ -208,11 +226,7 @@
   }
 
   .sign-parent {
-    left: 70%;
-  }
-
-  .info {
-    left: 50vmax;
+    right: -70%;
   }
 
   .secondParagraph {
