@@ -24,10 +24,22 @@
         <div class="background">
           <div class="space"></div>
           <div class="mountains absolute w-full bottom-0">
-            <div class="furthest-mountain absolute bottom-0 left-0"></div>
-            <div class="middle-mountain absolute bottom-0 left-0"></div>
-            <div class="closest-mountain absolute bottom-0 left-0"></div>
-            <div class="foreground-snow absolute bottom-0 left-0"></div>
+            <div
+              class="rellax furthest-mountain absolute bottom-0 left-0"
+              data-rellax-speed="1"
+            ></div>
+            <div
+              class="rellax middle-mountain absolute bottom-0 left-0"
+              data-rellax-speed="4"
+            ></div>
+            <div
+              class="rellax closest-mountain absolute bottom-0 left-0"
+              data-rellax-speed="7"
+            ></div>
+            <div
+              class="rellax foreground-snow absolute bottom-0 left-0"
+              data-rellax-speed="10"
+            ></div>
           </div>
           <div class="auroraElements">
             <div class="glow">
@@ -102,7 +114,7 @@
         </div>
         <img
           class="penguins"
-          style="bottom: -50vh; left: 45vh"
+          style="bottom: -40vh; left: 45vh"
           src="../assets/penguins/Hacker penguin.svg"
           alt=""
         />
@@ -114,7 +126,7 @@
         />
         <img
           class="penguins"
-          style="bottom: -52vh; left: 100vh"
+          style="bottom: -45vh; left: 100vh"
           src="../assets/penguins/Love penguin.svg"
           alt=""
         />
@@ -235,7 +247,7 @@
         />
         <img
           class="penguins"
-          style="bottom: -55vh; left: 105vh"
+          style="bottom: -50vh; left: 105vh"
           src="../assets/penguins/skii penguin.svg"
           alt=""
         />
@@ -259,19 +271,23 @@
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
       crossorigin
     ></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script>
       function transformScroll(event) {
         if (!event.deltaY) {
           return;
         }
-
         event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
         event.preventDefault();
       }
-
       var element = document.scrollingElement || document.documentElement;
       element.addEventListener("wheel", transformScroll);
     </script>
-    <!--whenever we need a new react component, add it here with a script tag and src as its filepath-->
+    <script>
+      var rellax = new Rellax(".rellax", {
+        horizontal: true,
+        vertical: false,
+      });
+    </script>
   </body>
 </html>
