@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: ABeeZee-Italic;
-  src: url(../assets/fonts/ABeeZee-Italic.ttf);
+  src: url(assets/fonts/ABeeZee-Italic.ttf);
 }
 
 @font-face {
   font-family: ABeeZee;
-  src: url(../assets/fonts/ABeeZee-Regular.ttf);
+  src: url(assets/fonts/ABeeZee-Regular.ttf);
 }
 
 .website {
@@ -53,7 +53,7 @@
   background-repeat: repeat-x;
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/misc/Sky.svg");
+  background-image: url("assets/misc/Sky.svg");
   background-size: cover;
   left: 0;
 }
@@ -79,7 +79,7 @@
   background-repeat: repeat-x;
   width: 50%;
   height: 100vh;
-  background-image: url("../assets/misc/Distant\ Mountain.svg");
+  background-image: url("assets/misc/Distant\ Mountain.svg");
   background-position: bottom;
 }
 
@@ -87,7 +87,7 @@
   background-repeat: repeat-x;
   width: 50%;
   height: 100vh;
-  background-image: url("../assets/misc/Middle\ Mountain.svg");
+  background-image: url("assets/misc/Middle\ Mountain.svg");
   background-position: bottom;
 }
 
@@ -95,7 +95,7 @@
   background-repeat: repeat-x;
   width: 50%;
   height: 100vh;
-  background-image: url("../assets/misc/Closest\ Mountain.svg");
+  background-image: url("assets/misc/Closest\ Mountain.svg");
   background-position: bottom;
 }
 
@@ -103,7 +103,7 @@
   background-repeat: repeat-x;
   width: 50%;
   height: 100vh;
-  background-image: url("../assets/misc/Snow\ Foreground.png");
+  background-image: url("assets/misc/Snow\ Foreground.png");
   background-position: bottom;
 }
 
@@ -192,14 +192,14 @@
 
 .info {
   position:relative;
-  width: 50vh;
-  text-align: center;
+  width: 490px;
+  text-align: left;
   font-family: "ABeeZee";
   font-weight: 200;
   color: white;
-  background:rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-    
+  background:rgba(0, 0, 0, 0.174);
+  border-radius: 50px;
+  padding: 30px;
 }
 
 .penguins {
