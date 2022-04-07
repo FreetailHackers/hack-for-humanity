@@ -51,7 +51,7 @@
   z-index: -99;
   position: fixed;
   background-repeat: repeat-x;
-  width: 100%;
+  width: 3000px;
   height: 100vh;
   background-image: url("./assets/misc/Sky.svg");
   background-size: cover;
