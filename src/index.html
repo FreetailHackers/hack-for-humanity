@@ -16,32 +16,29 @@
     <link rel="stylesheet" href="./main.css" />
     <!--animations!-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Learnathon 2022</title>
+    <title>Hack For Humanity TX 2022</title>
   </head>
   <body>
-    <div class="website">
-      <div class="firstScreen absolute w-screen h-screen bottom-0">
-        <div class="background">
-          <div class="space"></div>
-          <div class="mountains absolute w-full bottom-0">
-            <div class="furthest-mountain absolute bottom-0 left-0"></div>
-            <div class="middle-mountain absolute bottom-0 left-0"></div>
-            <div class="closest-mountain absolute bottom-0 left-0"></div>
-            <div class="foreground-snow absolute bottom-0 left-0"></div>
-          </div>
-          <div class="auroraElements">
-            <div class="glow">
-              <img src="../assets/Aurora Glow.svg" />
-            </div>
-            <div class="aurora">
-              <img src="../assets/Aurora.svg" />
-            </div>
-          </div>
+    <div class="space"></div>
+    <div class="auroraElements">
+        <div class="glow">
+          <img src="../assets/Aurora Glow.svg" />
         </div>
+        <div class="aurora">
+          <img src="../assets/Aurora.svg" />
+        </div>
+      </div>
+    <div id="superContentContainer">
+        <div class="mountains" data-scroll="-1.5">
+                <div class="furthest-mountain" data-scroll="-1.5" ></div>
+                <div class="middle-mountain" data-scroll="-1.5"></div>
+                <div class="closest-mountain" data-scroll="-1.5"></div>
+                <div class="foreground-snow" data-scroll="-1.5"></div>
+        </div>
+      <div class="firstScreen absolute w-screen h-screen bottom-0">            
         <div class="penguin">
           <img src="../assets/welcome penguin@3x.png" />
         </div>
-
         <div class="sign-parent">
           <img class="upperBigRopes" src="../assets/ropes.png" alt="" />
           <img class="bigRopes" src="../assets/ropes.png" alt="" />
@@ -155,6 +152,8 @@
         </div>
       </div>
     </div>
+</div>
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../src/index.js"></script>   
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -167,6 +166,8 @@
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
       crossorigin
     ></script>
+    
     <!--whenever we need a new react component, add it here with a script tag and src as its filepath-->
+
   </body>
 </html>
