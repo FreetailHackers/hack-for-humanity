@@ -12,6 +12,13 @@
   src: url(./assets/fonts/ABeeZee-Regular.ttf);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
 .website {
   scroll-behavior: smooth;
   overflow: hidden;
@@ -51,7 +58,7 @@
   z-index: -99;
   position: fixed;
   background-repeat: repeat-x;
-  width: 3000px;
+  width: 200%;
   height: 100vh;
   background-image: url("./assets/misc/Sky.svg");
   background-size: cover;
@@ -77,34 +84,40 @@
 
 .furthest-mountain {
   background-repeat: repeat-x;
-  width: 50%;
+  width: 100%;
   height: 100vh;
   background-image: url("./assets/misc/Distant\ Mountain.svg");
   background-position: bottom;
+  background-attachment: fixed;
 }
 
 .middle-mountain {
   background-repeat: repeat-x;
-  width: 50%;
+  width: 100%;
   height: 100vh;
   background-image: url("./assets/misc/Middle\ Mountain.svg");
   background-position: bottom;
+  background-attachment: fixed;
 }
 
 .closest-mountain {
   background-repeat: repeat-x;
-  width: 50%;
+  width: 100%;
   height: 100vh;
   background-image: url("./assets/misc/Closest\ Mountain.svg");
   background-position: bottom;
+  background-attachment: fixed;
 }
 
 .foreground-snow {
+  position: absolute;
   background-repeat: repeat-x;
-  width: 50%;
+  width: 400%;
   height: 100vh;
   background-image: url("./assets/misc/Snow\ Foreground.png");
   background-position: bottom;
+  bottom: 0%;
+  left:0;
 }
 
 .penguin {
@@ -192,14 +205,18 @@
 
 .info {
   position:relative;
-  width: 490px;
-  text-align: left;
+  width: 50vh;
+  text-align: center;
   font-family: "ABeeZee";
   font-weight: 200;
   color: white;
   background:rgba(0, 0, 0, 0.174);
-  border-radius: 50px;
-  padding: 30px;
+  border-radius: 0.5vh;
+  padding: 0.3vh;
+}
+
+.secondParagraph {
+  left: 70vmax;
 }
 
 .penguins {
@@ -241,9 +258,10 @@
 
   .secondParagraph {
     position: relative;
-    left: 80%;
+    left: 90vmax;
   }
-  .mountains {
+  .mountains,
+  .foreground-snow {
     width: 700vmax;
   }
 }
