@@ -121,25 +121,25 @@
         </div>
         <img
           class="penguins"
-          style="bottom: -62vh; left: 45vh"
+          style="bottom: -50vh; left: 45vh"
           src="assets/penguins/Hacker penguin.svg"
           alt=""
         />
         <img
           class="penguins"
-          style="bottom: -65vh; left: 73vh"
+          style="bottom: -55vh; left: 73vh"
           src="assets/penguins/Farmer penguin.svg"
           alt=""
         />
         <img
           class="penguins"
-          style="bottom: -63vh; left: 100vh"
+          style="bottom: -53vh; left: 100vh"
           src="assets/penguins/Love penguin.svg"
           alt=""
         />
         <img
           class="sign"
-          style="bottom: 73vh; left: 130vh"
+          style="bottom: 63vh; left: 130vh"
           src="assets/environment/post.svg"
           alt=""
         />
@@ -162,19 +162,19 @@
         </div>
         <img
           class="penguins"
-          style="bottom: -73vh"
+          style="bottom: -63vh"
           src="assets/penguins/Artist penguin.svg"
           alt=""
         />
         <img
           class="igloo"
-          style="bottom: -63vh; left: 45vh"
+          style="bottom: -53vh; left: 45vh"
           src="assets/environment/Igloo.svg"
           alt=""
         />
         <img
           class="rocks"
-          style="bottom: -63vh; left: 95vh"
+          style="bottom: -53vh; left: 95vh"
           src="assets/environment/rock1.svg"
           alt=""
         />
@@ -196,19 +196,19 @@
         </div>
         <img
           class="penguins"
-          style="bottom: -76vh; left: -10vh"
+          style="bottom: -66vh; left: -10vh"
           src="assets/penguins/peace penguin.svg"
           alt=""
         />
         <img
           class="penguins"
-          style="bottom: -78vh; left: 20vh"
+          style="bottom: -68vh; left: 20vh"
           src="assets/penguins/polar bear.svg"
           alt=""
         />
         <img
           class="penguins"
-          style="bottom: -83vh; left: 50vh; transform: scale(0.4) !important"
+          style="bottom: -73vh; left: 50vh; transform: scale(0.4) !important"
           src="assets/penguins/chef penguin.svg"
           alt=""
         />
@@ -254,7 +254,7 @@
         />
         <img
           class="penguins"
-          style="bottom: -68vh; left: 105vh"
+          style="bottom: -58vh; left: 105vh"
           src="assets/penguins/skii penguin.svg"
           alt=""
         />
@@ -286,16 +286,43 @@
       }
       var element = document.scrollingElement || document.documentElement;
       element.addEventListener("wheel", transformScroll);
-      document.onkeydown = function (e) {
-        switch (e.keyCode) {
+
+      var handler = function (e) {
+        e = e || window.event;
+        var k = e.keyCode || e.which;
+        if (e == 37 || e == 38 || e == 39 || e == 40) e.preventDefault();
+        switch (k) {
           case 38:
-            window.scrollBy({ left: 150, top: 0, behavior: "smooth" });
+          case 37:
+            sideScroll("right", 2, 100, 10);
             break;
           case 40:
-            window.scrollBy({ left: -150, top: 0, behavior: "smooth" });
+          case 39:
+            sideScroll("left", 2, 100, 10);
             break;
+          default:
+            return true;
         }
+        return false;
       };
+      function sideScroll(direction, speed, distance, step) {
+        scrollAmount = 0;
+        var slideTimer = setInterval(function () {
+          if (direction == "left") {
+            document.body.scrollLeft += 3;
+            document.documentElement.scrollLeft += 3;
+          } else {
+            document.body.scrollLeft -= 3;
+            document.documentElement.scrollLeft -= 3;
+          }
+          scrollAmount += step;
+          if (scrollAmount >= distance) {
+            window.clearInterval(slideTimer);
+          }
+        }, speed);
+      }
+      if (window.attachEvent) window.addEvent("onkeydown", handler, false);
+      else window.addEventListener("keydown", handler, false);
     </script>
     <script>
       var rellax = new Rellax(".rellax", {

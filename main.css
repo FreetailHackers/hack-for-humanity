@@ -212,7 +212,7 @@ html {
   color: white;
   background:rgba(0, 0, 0, 0.174);
   border-radius: 0.5vh;
-  padding: 0.3vh;
+  padding: 2vh;
 }
 
 .secondParagraph {
@@ -258,7 +258,7 @@ html {
 
   .secondParagraph {
     position: relative;
-    left: 90vmax;
+    left: 110vmax;
   }
   .mountains,
   .foreground-snow {
