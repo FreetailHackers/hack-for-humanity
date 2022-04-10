@@ -23,7 +23,6 @@ html {
   scroll-behavior: smooth;
   overflow: hidden;
   width: 600vw;
-  height: 100%;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -54,11 +53,20 @@ html {
   left: 500vh;
 }
 
+.sixthScreen {
+  position: absolute;
+  left: 700vh;
+  width: 67%;
+  height: 90%;
+  margin-top: 5vh;
+  background:rgba(0, 0, 0, 0.12);
+}
+
 .space {
   z-index: -99;
   position: fixed;
   background-repeat: repeat-x;
-  width: 200%;
+  width: 300%;
   height: 100vh;
   background-image: url("./assets/misc/Sky.svg");
   background-size: cover;
@@ -75,7 +83,7 @@ html {
 }
 
 .mountains {
-  width: 400%;
+  width: 500%;
   position: fixed;
   bottom: 0%;
   left:0;
@@ -112,7 +120,7 @@ html {
 .foreground-snow {
   position: absolute;
   background-repeat: repeat-x;
-  width: 400%;
+  width: 1200vh;
   height: 100vh;
   background-image: url("./assets/misc/Snow\ Foreground.png");
   background-position: bottom;
@@ -210,7 +218,7 @@ html {
   font-family: "ABeeZee";
   font-weight: 200;
   color: white;
-  background:rgba(0, 0, 0, 0.174);
+  background:rgba(0, 0, 0, 0.12);
   border-radius: 0.5vh;
   padding: 2vh;
 }
@@ -243,6 +251,80 @@ html {
   width:100%;
 }
 
+.schedule {
+  margin-left: 10vh;
+  width: 83%;
+  display: grid;
+  grid-gap: .1vh;
+  grid-template-rows:
+    [tracks] auto [time-0800] 1fr [time-0900] 1fr [time-1000] 1fr [time-1100] 1fr [time-1200] 1fr [time-1300] 1fr [time-1400] 1fr [time-1500] 1fr [time-1600] 1fr [time-1700] 1fr [time-1800] 1fr [time-1900] 1fr [time-2000] 1fr [time-2100] 1fr [time-2200];
+  ;
+  grid-template-columns:
+    [times] 1vh [track-1-start] 1fr [track-1-end track-2-start] 1fr [track-2-end];
+}
+
+.schedule::after {
+  display: block;
+  content: '';
+  position: sticky;
+  top: 0;
+  grid-column: track-1 / -1;
+  grid-row: tracks;
+  z-index: 999;
+}
+
+.track-slot {
+  display: block;
+  position: sticky;
+  margin-top: 2.5vh;
+  z-index: 1000;
+  font-family: "ABeeZee";
+  font-weight: 200;
+  color: white;
+  font-size: 5vh;
+  text-align: center;
+}
+
+.session {
+  margin: 0;
+  padding: .7vh;
+  border-radius: 0.2vh;
+  font-size: 1.4vh;
+}
+
+.title,
+.time-slot {
+  margin: -0.85vh;
+  font-size: 1.8vh;
+}
+
+.time-slot {
+  font-weight: bold;
+  font-size: 1.6vh;
+  margin-left: -6vh;
+}
+
+h2,
+.title {
+  font-family: "ABeeZee";
+  font-weight: 200;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  margin-top:0.1vh;
+}
+
+span {
+  display: block;
+}
+
+.track {
+  background-color: #1b1c1d;
+  color: #fff;
+}
+
 @media (max-width: 1200px) {
   .website {
     width: 700vw;
@@ -260,8 +342,16 @@ html {
     position: relative;
     left: 110vmax;
   }
+
   .mountains,
   .foreground-snow {
-    width: 700vmax;
+    width: 1200vmax;
+  }
+
+  .sixthScreen {
+    width: 95vh;
+  }
+  .schedule {
+    width: 80vh;
   }
 }

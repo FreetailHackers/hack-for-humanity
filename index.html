@@ -8,10 +8,6 @@
     <meta name="description" content="Freetail Hacker's annual Learnathon" />
     <link rel="shortcut icon" href="assets/misc/welcome penguin@3x.png" />
     <link rel="apple-touch-icon" href="assets/misc/welcome penguin@3x.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="./main.css" />
     <!--animations!-->
@@ -22,10 +18,7 @@
     <div class="website">
       <div class="firstScreen absolute w-screen h-screen bottom-0">
         <div class="background">
-          <div
-            class="rellax absolute bottom-0 left-0 space"
-            data-rellax-speed="2"
-          ></div>
+          <div class="absolute bottom-0 left-0 space"></div>
           <div class="mountains absolute w-full bottom-0">
             <div
               class="rellax furthest-mountain absolute bottom-0 left-0"
@@ -145,7 +138,7 @@
         />
       </div>
       <div class="thirdScreen">
-        <div class="info" style="top: 6vh; left: 80vh">
+        <div class="info thirdParagraph" style="top: 6vh; left: 80vh">
           <a>
             <p style="font-size: 40px; line-height: 45px; margin-bottom: 15px">
               Who can attend?
@@ -220,9 +213,9 @@
         />
       </div>
       <div class="fifthScreen">
-        <div class="info" style="margin-top: 20vh; left: 70vh">
+        <div class="info" style="margin-top: 20vh; left: 30vh">
           <a>
-            <p style="font-size: 40px; line-height: 45px; margin-bottom: 15px">
+            <p style="font-size: 4vh; line-height: 4.5vh; margin-bottom: 15px">
               Inclusion
             </p>
             As mentioned, Longhorn Hack for Humanity is designed for everyone.
@@ -248,22 +241,107 @@
         />
         <img
           class="penguins"
-          style="bottom: -63vh; left: 80vh"
+          style="bottom: -53vh; left: 80vh"
           src="assets/penguins/winter penguin.svg"
           alt=""
         />
         <img
           class="penguins"
-          style="bottom: -58vh; left: 105vh"
+          style="bottom: -48vh; left: 105vh"
           src="assets/penguins/skii penguin.svg"
           alt=""
         />
         <img
           class="penguins"
-          style="bottom: -64vh; left: 130vh; transform: scale(0.4) !important"
+          style="bottom: -54vh; left: 130vh; transform: scale(0.4) !important"
           src="assets/penguins/sensei penguin.svg"
           alt=""
         />
+        <div class="info" style="left: 120vh; bottom: 10vh">
+          <p style="font-size: 5vh; line-height: 4.5vh">Schedule ⟶</p>
+        </div>
+      </div>
+      <div class="sixthScreen">
+        <div class="schedule">
+          <span
+            class="track-slot"
+            style="grid-column: track-1; grid-row: tracks"
+            >Friday</span
+          >
+          <span
+            class="track-slot"
+            style="grid-column: track-2; grid-row: tracks"
+            >Saturday</span
+          >
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-0800">
+            8:00am
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-0900">
+            9:00am
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1000">
+            10:00am
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1100">
+            11:00am
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1200">
+            12:00am
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1300">
+            1:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1400">
+            2:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1500">
+            3:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1600">
+            4:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1700">
+            5:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1800">
+            6:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1900">
+            7:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-2000">
+            8:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-2100">
+            9:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-2200">
+            10:00pm
+          </h2>
+          <div
+            class="session track"
+            style="
+              grid-column: track-1;
+              grid-row: time-1900 / time-2100;
+              height: 90%;
+              margin-top: 1.5vh;
+            "
+          >
+            <h3 class="title">Optional Team Matching</h3>
+            <h3 class="title">7pm-9pm</h3>
+          </div>
+          <div
+            class="session track"
+            style="
+              grid-column: track-1;
+              grid-row: time-1800 / time-1900;
+              height: 115%;
+            "
+          >
+            <h3 class="title">Opening Ceremony</h3>
+            <h3 class="title">6pm-7pm</h3>
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -279,51 +357,7 @@
       crossorigin
     ></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-    <script>
-      function transformScroll(event) {
-        event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
-        event.preventDefault();
-      }
-      var element = document.scrollingElement || document.documentElement;
-      element.addEventListener("wheel", transformScroll);
-
-      var handler = function (e) {
-        e = e || window.event;
-        var k = e.keyCode || e.which;
-        if (e == 37 || e == 38 || e == 39 || e == 40) e.preventDefault();
-        switch (k) {
-          case 38:
-          case 37:
-            sideScroll("right", 2, 100, 10);
-            break;
-          case 40:
-          case 39:
-            sideScroll("left", 2, 100, 10);
-            break;
-          default:
-            return true;
-        }
-        return false;
-      };
-      function sideScroll(direction, speed, distance, step) {
-        scrollAmount = 0;
-        var slideTimer = setInterval(function () {
-          if (direction == "left") {
-            document.body.scrollLeft += 3;
-            document.documentElement.scrollLeft += 3;
-          } else {
-            document.body.scrollLeft -= 3;
-            document.documentElement.scrollLeft -= 3;
-          }
-          scrollAmount += step;
-          if (scrollAmount >= distance) {
-            window.clearInterval(slideTimer);
-          }
-        }, speed);
-      }
-      if (window.attachEvent) window.addEvent("onkeydown", handler, false);
-      else window.addEventListener("keydown", handler, false);
-    </script>
+    <script type="text/javascript" src="scroll.js"></script>
     <script>
       var rellax = new Rellax(".rellax", {
         horizontal: true,
