@@ -9,6 +9,11 @@
     <link rel="shortcut icon" href="assets/misc/welcome penguin@3x.png" />
     <link rel="apple-touch-icon" href="assets/misc/welcome penguin@3x.png" />
     <link rel="stylesheet" href="dist/output.css" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./main.css" />
     <!--animations!-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -271,11 +276,7 @@
         <div class="schedule">
           <span
             class="track-slot"
-            style="
-              grid-column: track-1 / track-start;
-              grid-row: tracks;
-              margin-left: -15vh;
-            "
+            style="grid-column: track-start2 / track-boba; grid-row: tracks"
             >Friday</span
           >
           <span
@@ -331,19 +332,34 @@
           <div
             class="track notImportant"
             style="
-              grid-column: track-start / track-start2;
-              grid-row: time-1000 / time-1700;
+              grid-column: track-start / track-1;
+              grid-row: time-1000 / time-1500;
               height: 105%;
               margin-top: -0.5vh;
               margin-left: 3vh;
               margin-right: -3vh;
             "
           >
-            <h3 class="title" style="margin-top: 7vh">Enjoy Your Friday!</h3>
-            <h3 class="title" style="margin-top: 23vh">
-              Prepare for the Hackathon!
-            </h3>
+            <h3 class="title" style="margin-top: 12vh">Enjoy Your Friday!</h3>
           </div>
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-start / track-1;
+              grid-row: time-1600 / time-1800;
+              height: 90%;
+              margin-top: -0.5vh;
+              margin-left: 3vh;
+              margin-right: -3vh;
+            "
+          >
+            <h3 class="title" style="padding-top: 1.5vh">
+              Gong Cha Profit Share
+            </h3>
+            <h3 class="timing">Dobie</h3>
+            <h3 class="hiddenText">4pm-8pm</h3>
+          </div>
+
           <div
             class="track important"
             style="
@@ -356,7 +372,8 @@
             "
           >
             <h3 class="title">Opening Ceremony</h3>
-            <h3 class="timing">6pm-7pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">6pm-7pm</h3>
           </div>
           <div
             class="track important hacking"
@@ -373,12 +390,29 @@
             <h3 class="timing">6pm</h3>
           </div>
           <div
+            class="track notImportant hacking"
+            style="
+              grid-column: track-boba-end;
+              grid-row: time-1800 / time-2000;
+              height: 105%;
+              margin-top: -1vh;
+              margin-left: 3vh;
+              margin-right: -3vh;
+            "
+          >
+            <h3 class="title" style="padding-top: 1.5vh">Gong Cha</h3>
+            <h3 class="title" style="padding-top: 2vh">Profit Share</h3>
+            <h3 class="timing" style="padding-top: -1vh">Dobie</h3>
+            <h3 class="hiddenText">4pm-8pm</h3>
+          </div>
+
+          <div
             class="track notImportant"
             style="
-              grid-column: track-start / track-1;
+              grid-column: track-start / track-start2;
               grid-row: time-1900 / time-2100;
               height: 95%;
-              margin-top: 0.4vh;
+              margin-top: -0.4vh;
               margin-left: 3vh;
               margin-right: -3vh;
             "
@@ -386,7 +420,8 @@
             <h3 class="title" style="padding-top: 1.5vh">
               Optional Team Matching
             </h3>
-            <h3 class="timing">7pm-9pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">7pm-9pm</h3>
           </div>
           <div
             class="track important"
@@ -398,7 +433,8 @@
             "
           >
             <h3 class="title" style="padding-top: 1vh">Check In</h3>
-            <h3 class="timing">8:30am-10am</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">8:30am-10am</h3>
           </div>
           <div
             class="track notImportant"
@@ -410,7 +446,8 @@
             "
           >
             <h3 class="title">Workshop 1</h3>
-            <h3 class="timing">11am-12pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">11am-12pm</h3>
           </div>
           <div
             class="track important"
@@ -422,7 +459,8 @@
             "
           >
             <h3 class="title">Lunch With Pengu Screening</h3>
-            <h3 class="timing">12pm-1pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">12pm-1pm</h3>
           </div>
           <div
             class="track notImportant"
@@ -434,7 +472,8 @@
             "
           >
             <h3 class="title">Workshop 2</h3>
-            <h3 class="timing">2pm-3pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">2pm-3pm</h3>
           </div>
           <div
             class="track notImportant"
@@ -446,7 +485,8 @@
             "
           >
             <h3 class="title">Game 1</h3>
-            <h3 class="timing">2pm-3pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">2pm-3pm</h3>
           </div>
           <div
             class="track notImportant"
@@ -458,7 +498,8 @@
             "
           >
             <h3 class="title">Workshop 3</h3>
-            <h3 class="timing">3pm-4pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">3pm-4pm</h3>
           </div>
           <div
             class="track notImportant"
@@ -470,7 +511,8 @@
             "
           >
             <h3 class="title">Game 2</h3>
-            <h3 class="timing">3pm-4pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">3pm-4pm</h3>
           </div>
 
           <div
@@ -483,19 +525,21 @@
             "
           >
             <h3 class="title">Game 3</h3>
-            <h3 class="timing">4pm-5pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">4pm-5pm</h3>
           </div>
           <div
             class="track notImportant"
             style="
               grid-column: track-2-start / track-3-end;
               grid-row: time-1700 / time-1800;
-              height: 90%;
+              height: 100%;
               margin-top: -0.7vh;
             "
           >
             <h3 class="title">Submission/Presentation Q&A</h3>
-            <h3 class="timing">5pm-6pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">5pm-6pm</h3>
           </div>
           <div
             class="track notImportant"
@@ -507,7 +551,8 @@
             "
           >
             <h3 class="title">Socials + Snacks</h3>
-            <h3 class="timing">6pm-7pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">6pm-7pm</h3>
           </div>
           <div
             class="track important hacking"
@@ -532,7 +577,8 @@
             "
           >
             <h3 class="title" style="padding-top: 0.8vh">Judging</h3>
-            <h3 class="timing">7pm-9pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">7pm-9pm</h3>
           </div>
           <div
             class="track important"
@@ -544,7 +590,20 @@
             "
           >
             <h3 class="title">Closing Ceremony</h3>
-            <h3 class="timing">9pm-10pm</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">9pm-10pm</h3>
+          </div>
+        </div>
+      </div>
+      <div class="seventhScreen">
+        <div class="info faqInfo">
+          <p style="font-size: 5vh; line-height: 4.5vh">FAQ ⟶</p>
+        </div>
+        <div class="faq">
+          <div class="faqItem" id="question1">
+            <a href="#question1"> Test_1 </a>
+            <i class="icon ion-md-add"></i>
+            <i class="icon ion-md-remove"></i>
           </div>
         </div>
       </div>
