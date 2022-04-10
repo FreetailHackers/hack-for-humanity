@@ -57,9 +57,9 @@ html {
   border-radius: 1vh;
   position: absolute;
   left: 700vh;
-  width: 80%;
-  height: 93%;
-  margin-top: 2.5vh;
+  width: 75%;
+  height: 87%;
+  margin-top: 6vh;
   background:rgba(0, 0, 0, 0.12);
 }
 
@@ -228,10 +228,15 @@ html {
   left: 70vmax;
 }
 
-.penguins {
+.penguins,
+.post {
   position: absolute;
   transform: scale(0.5);
   width:100%;
+}
+
+.post {
+  transform: scale(0.3);
 }
 
 .igloo {
@@ -254,14 +259,14 @@ html {
 
 .schedule {
   margin-left: 10vh;
-  width: 83%;
+  width: 88%;
   display: grid;
   grid-gap: 0.1vh;
   grid-template-rows:
-    [tracks] auto [time-0800] 0.7fr [time-0900] 0.7fr [time-1000] 0.7fr [time-1100] 0.6fr [time-1200] 0.3fr [time-1300] 0.7fr [time-1400] 0.6fr [time-1500] 0.6fr [time-1600] 0.6fr [time-1700] 0.6fr [time-1800] 0.2fr [time-1900] 0.8fr [time-2000] 0.7fr [time-2100] 0.6fr [time-2200];
+    [tracks] auto [time-0800] 0.95fr [time-0900] 0.95fr [time-1000] 0.95fr [time-1100] 0.85fr [time-1200] 0.55fr [time-1300] 1.1fr [time-1400] 0.85fr [time-1500] 0.85fr [time-1600] 0.85fr [time-1700] 0.85fr [time-1800] 0.45fr [time-1900] 1.05fr [time-2000] 0.95fr [time-2100] 0.85fr [time-2200];
   ;
   grid-template-columns:
-    [times] 0fr [track-1-start] 0.5fr [track-1-end track-gap-start] 0.2fr [track-1-end track-2-start] 0.25fr [track-2-start track-2-end] 0.02fr [track-2-end track-3-start] 0.25fr [track-3-start track-3-end] 0.01fr [track-3-end track-4-start] 0.15fr [track-4-end];
+    [times] 0fr [track-start-start] 0.25fr [track-start-end track-newGap-start] 0.02fr [track-newGap-end track-start2-start] 0.25fr [track-start2-end track-1-start] 0.01fr [track-1-end track-gap-start] 0.2fr [track-1-end track-2-start] 0.25fr [track-2-start track-2-end] 0.02fr [track-2-end track-3-start] 0.25fr [track-3-start track-3-end] 0.01fr [track-3-end track-4-start] 0.15fr [track-4-end];
 }
 
 .schedule::after {
@@ -316,7 +321,7 @@ h2,
 
 .timing {
   font-size: 1.5vh;
-  padding-top: 2vh;
+  padding-top: 1.6vh;
 }
 
 span {
@@ -342,12 +347,12 @@ span {
 .hackingEnds {
   grid-column: track-4;
   grid-row: time-1800;
-  margin-top: -3.5vh;
+  margin-top: -4.2vh;
   
 }
 
 .hackingEnds h3 {
-  font-size: 2.3vh;
+  font-size: 3vh;
   color: rgb(40, 129, 70);
   font-weight: bold;
 }
@@ -375,9 +380,13 @@ span {
   }
 
   .sixthScreen {
-    width: 95vh;
+    width: 97vh;
   }
   .schedule {
-    width: 80vh;
+    width: 95vh;
+  }
+  
+  .post2 {
+    left: -25vh;
   }
 }
