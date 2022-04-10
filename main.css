@@ -315,15 +315,13 @@ html {
 
 h2,
 .title,
-.timing,
-.hackingEnds {
+.timing {
   font-family: "ABeeZee";
   color: white;
 }
 
 .title,
-.timing,
-.hackingEnds {
+.timing {
   position: relative;
   text-align: center;
   margin-top:0.1vh;
@@ -342,6 +340,7 @@ span {
 .important {
   align-items: center;
   color: #fff;
+  z-index:900;
   margin: 0;
   padding: .7vh;
   font-size: 1.4vh;
@@ -372,6 +371,7 @@ span {
   margin-top: -0.5vh;
   transform: scale(0.83);
 }
+
 .track:hover .timing {
   margin-top:-1vh;
   transform: scale(0.83);
@@ -383,12 +383,13 @@ span {
 }
 
 .faqInfo {
-  left: 90vh;
+  left: 80vh;
   top: 37vh;
-  width: 250%;
+  width: 80%;
   align-items: center;
   text-align: center;
 }
+
 @media (max-width: 1200px) {
   .website {
     width: 700vw;

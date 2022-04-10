@@ -434,7 +434,7 @@
           >
             <h3 class="title" style="padding-top: 1vh">Check In</h3>
             <h3 class="timing">Location</h3>
-            <h3 class="hiddenText">8:30am-10am</h3>
+            <h3 class="hiddenText" style="margin-left: -3.5vh">8:30am-10am</h3>
           </div>
           <div
             class="track notImportant"
@@ -447,7 +447,7 @@
           >
             <h3 class="title">Workshop 1</h3>
             <h3 class="timing">Location</h3>
-            <h3 class="hiddenText">11am-12pm</h3>
+            <h3 class="hiddenText" style="margin-left: -3.3vh">11am-12pm</h3>
           </div>
           <div
             class="track important"
@@ -493,8 +493,8 @@
             style="
               grid-column: track-2;
               grid-row: time-1500 / time-1600;
-              height: 90%;
-              margin-top: -0.5vh;
+              height: 100%;
+              margin-top: -1vh;
             "
           >
             <h3 class="title">Workshop 3</h3>
@@ -506,8 +506,8 @@
             style="
               grid-column: track-3;
               grid-row: time-1500 / time-1600;
-              height: 90%;
-              margin-top: -0.5vh;
+              height: 100%;
+              margin-top: -1vh;
             "
           >
             <h3 class="title">Game 2</h3>
@@ -521,7 +521,7 @@
               grid-column: track-2-start / track-3-end;
               grid-row: time-1600 / time-1700;
               height: 87%;
-              margin-top: -0.3vh;
+              margin-top: -0.8vh;
             "
           >
             <h3 class="title">Game 3</h3>
@@ -533,8 +533,9 @@
             style="
               grid-column: track-2-start / track-3-end;
               grid-row: time-1700 / time-1800;
-              height: 100%;
-              margin-top: -0.7vh;
+              height: 110%;
+              margin-top: -1.1vh;
+              z-index: 800 !important;
             "
           >
             <h3 class="title">Submission/Presentation Q&A</h3>
@@ -547,7 +548,7 @@
               grid-column: track-2;
               grid-row: time-1800 / time-1900;
               height: 105%;
-              margin-top: -0.5vh;
+              margin-top: -0.2vh;
             "
           >
             <h3 class="title">Socials + Snacks</h3>
@@ -560,7 +561,7 @@
               grid-column: track-3;
               grid-row: time-1800 / time-1900;
               height: 105%;
-              margin-top: -0.5vh;
+              margin-top: -0.2vh;
             "
           >
             <h3 class="title">HACKING ENDS!</h3>
@@ -591,7 +592,7 @@
           >
             <h3 class="title">Closing Ceremony</h3>
             <h3 class="timing">Location</h3>
-            <h3 class="hiddenText">9pm-10pm</h3>
+            <h3 class="hiddenText" style="margin-left: -3vh">9pm-10pm</h3>
           </div>
         </div>
       </div>
@@ -599,11 +600,171 @@
         <div class="info faqInfo">
           <p style="font-size: 5vh; line-height: 4.5vh">FAQ ⟶</p>
         </div>
-        <div class="faq">
+        <div class="info faq" style="left: 150vh">
           <div class="faqItem" id="question1">
-            <a href="#question1"> Test_1 </a>
-            <i class="icon ion-md-add"></i>
-            <i class="icon ion-md-remove"></i>
+            <a class="accordion-link" href="#question1">
+              How Do Teams Work?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              Teams can be up to 3 members. If you don't have a team, don’t
+              worry! Joining a team of new friends is the best part of a
+              hackathon. We will have team matching available for everyone on
+              the day of the event, but if you would like to message our channel
+              and create a team beforehand, that's okay too! We will have a form
+              to fill out and confirm team information.
+            </div>
+          </div>
+          <div class="faqItem" id="question2">
+            <a class="accordion-link" href="#question2">
+              How do I volunteer?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              We always appreciate having mentors to coach teams throughout the
+              building process and anyone with tech experience is welcome to
+              help out. We are also looking for mentors with experience and
+              expertise in spaces that need humanitarian change. We want
+              students to create thoughtful change and part of that process
+              includes learning about the problem space they are trying to
+              create change in. Fill out the mentor form above and if you have
+              any other questions email us at hello@freetailhackers.com!
+            </div>
+          </div>
+          <div class="faqItem" id="question3">
+            <a class="accordion-link" href="#question3">
+              How much money will this cost me?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">How much money will this cost me?</div>
+          </div>
+          <div class="faqItem" id="question4">
+            <a class="accordion-link" href="#question4">
+              Any rules?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              All work must be done during the 24-hour period of the event. You
+              can't demo something you didn't build. Don't talk about Fight
+              Club. All attendees (hackers, supporters, mentors, volunteers,
+              etc.) must abide by the MLH Code of Conduct.
+            </div>
+          </div>
+          <div class="faqItem" id="question5">
+            <a class="accordion-link" href="#question5">
+              When is the Longhorn Hack for Humanity?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              Saturday, April 22nd - Sunday, April 23rd. Opening Ceremony will
+              be on April 22nd at 6PM at the Computer Science Gates Dell Complex
+              (GDC) in the lecture hall 2.216. We will start the virtual part of
+              the hackathon then, and in person event activities (including
+              walk-in and check-in ) will be April 23rd at GDC.
+            </div>
+          </div>
+          <div class="faqItem" id="question6">
+            <a class="accordion-link" href="#question6">
+              When does registration close?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              Registration closes when the Hackathon starts! Because of the
+              in-person setting, we want to open up the opportunity to as many
+              people as possible, however do fill up spots on a first come first
+              serve basis. We will open waitlists and allow for a limited number
+              of walk-ins on the day of! We would love it if you could fill out
+              the application as soon as possible to help us plan for the event
+              :)
+            </div>
+          </div>
+          <div class="faqItem" id="question7">
+            <a class="accordion-link" href="#question7">
+              Will there be prizes and tracks?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              Yes! We plan to give prizes to the top placing team in each
+              category. More information on this will be available on our
+              day-of-site available closer to the site.
+            </div>
+          </div>
+          <div class="faqItem" id="question8">
+            <a class="accordion-link" href="#question8">
+              Will there be food at the event?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              Yes! We will provide lunch to all registered attendees (mindful of
+              dietary restrictions and accommodations based on the registration
+              form). We will also be providing specialty snack items around
+              dinner and have a profit-share with Gong Cha Boba from 4 - 8PM
+              (mention Freetail Hackers) that is also a part of the event!
+            </div>
+          </div>
+          <div class="faqItem" id="question9">
+            <a class="accordion-link" href="#question9">
+              Where will walk-in check-in be?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              It will be on the 3rd floor bridge of the Gates Dell Computer
+              Science Building (GDC 3.100)
+            </div>
+          </div>
+          <div class="faqItem" id="question10">
+            <a class="accordion-link" href="#question10">
+              I am a mentor, what should I expect?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              We thank you for taking the time to guide our students in
+              technical and non-technical aspects to help them design,
+              implement, present, and think about their projects! You do not
+              need any prior programming knowledge to mentor. We do not require
+              that you stay on-call or be available throughout the entire
+              hackathon, but at least contribute 2 hours at your flexibility and
+              help students at either the mentor lounge, office hours or through
+              the discord server. We will be providing all mentors with lunch,
+              snacks, a complimentary boba drink, and the opportunity to
+              interact with students through games, workshops, or other events!
+            </div>
+          </div>
+          <div class="faqItem" id="question11">
+            <a class="accordion-link" href="#question11">
+              Can I attend any of the events or workshops virtually?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              No, this is a completely in-person hackathon. However, we will
+              make workshop recordings available later at our Youtube Channel!
+            </div>
+          </div>
+          <div class="faqItem" id="question12">
+            <a class="accordion-link" href="#question12">
+              How can I get access to the Discord Server and be up-to date on
+              everything that is happening?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              We will send a link to the server within a week leading up to the
+              event! Be on the lookout in your email on the account that you
+              registered for the event. All our announcements will be available
+              on this server, in-person screens, and on our day-of-site which
+              will be available as soon as the hackathon begins!
+            </div>
           </div>
         </div>
       </div>
