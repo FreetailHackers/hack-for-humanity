@@ -54,11 +54,12 @@ html {
 }
 
 .sixthScreen {
+  border-radius: 1vh;
   position: absolute;
   left: 700vh;
-  width: 67%;
-  height: 90%;
-  margin-top: 5vh;
+  width: 80%;
+  height: 93%;
+  margin-top: 2.5vh;
   background:rgba(0, 0, 0, 0.12);
 }
 
@@ -255,12 +256,12 @@ html {
   margin-left: 10vh;
   width: 83%;
   display: grid;
-  grid-gap: .1vh;
+  grid-gap: 0.1vh;
   grid-template-rows:
-    [tracks] auto [time-0800] 1fr [time-0900] 1fr [time-1000] 1fr [time-1100] 1fr [time-1200] 1fr [time-1300] 1fr [time-1400] 1fr [time-1500] 1fr [time-1600] 1fr [time-1700] 1fr [time-1800] 1fr [time-1900] 1fr [time-2000] 1fr [time-2100] 1fr [time-2200];
+    [tracks] auto [time-0800] 0.7fr [time-0900] 0.7fr [time-1000] 0.7fr [time-1100] 0.6fr [time-1200] 0.3fr [time-1300] 0.7fr [time-1400] 0.6fr [time-1500] 0.6fr [time-1600] 0.6fr [time-1700] 0.6fr [time-1800] 0.2fr [time-1900] 0.8fr [time-2000] 0.7fr [time-2100] 0.6fr [time-2200];
   ;
   grid-template-columns:
-    [times] 1vh [track-1-start] 1fr [track-1-end track-2-start] 1fr [track-2-end];
+    [times] 0fr [track-1-start] 0.5fr [track-1-end track-gap-start] 0.2fr [track-1-end track-2-start] 0.25fr [track-2-start track-2-end] 0.02fr [track-2-end track-3-start] 0.25fr [track-3-start track-3-end] 0.01fr [track-3-end track-4-start] 0.15fr [track-4-end];
 }
 
 .schedule::after {
@@ -285,46 +286,71 @@ html {
   text-align: center;
 }
 
-.session {
-  margin: 0;
-  padding: .7vh;
-  border-radius: 0.2vh;
-  font-size: 1.4vh;
-}
-
 .title,
 .time-slot {
-  margin: -0.85vh;
+  margin: -2.5vh;
   font-size: 1.8vh;
 }
 
 .time-slot {
-  font-weight: bold;
+  font-weight: 200;
   font-size: 1.6vh;
   margin-left: -6vh;
 }
 
 h2,
-.title {
+.title,
+.timing,
+.hackingEnds {
   font-family: "ABeeZee";
-  font-weight: 200;
   color: white;
 }
 
-.title {
+.title,
+.timing,
+.hackingEnds {
+  position: relative;
   text-align: center;
   margin-top:0.1vh;
+}
+
+.timing {
+  font-size: 1.5vh;
+  padding-top: 2vh;
 }
 
 span {
   display: block;
 }
 
-.track {
-  background-color: #1b1c1d;
+.track,
+.important {
+  align-items: center;
   color: #fff;
+  margin: 0;
+  padding: .7vh;
+  font-size: 1.4vh;
+  border-radius: 1.5vh;
+}
+.track {
+    background-color: rgba(29, 29, 29, 0.8);
+}
+.important {
+  background-color: rgba(40, 129, 70, 0.8);
 }
 
+.hackingEnds {
+  grid-column: track-4;
+  grid-row: time-1800;
+  margin-top: -3.5vh;
+  
+}
+
+.hackingEnds h3 {
+  font-size: 2.3vh;
+  color: rgb(40, 129, 70);
+  font-weight: bold;
+}
 @media (max-width: 1200px) {
   .website {
     width: 700vw;
