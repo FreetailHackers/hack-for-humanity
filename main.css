@@ -383,11 +383,87 @@ span {
 }
 
 .faqInfo {
-  left: 80vh;
+  left: 200vh;
   top: 37vh;
   width: 80%;
   align-items: center;
   text-align: center;
+}
+
+.faq {
+  left: 300vh;
+  width: 300%;
+}
+
+.faqItem {
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: 1vh;
+  border-radius: 1vh;
+}
+
+.hide {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.accordionLink {
+  font-size:1.6vh;
+  color:white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:0.5vh 0;
+}
+
+.accordionLink i {
+  color: pink;
+  padding: 0.5vh;
+}
+
+.accordionLink .ion-md-remove {
+  display: none;
+}
+
+.answer {
+  overflow: hidden;
+  max-height: 0;
+  position: relative;
+  background-color: gray;
+  transition: max-height 500ms;
+}
+
+.answer::before {
+  content: "";
+  position: absolute;
+  width:0.6vh;
+  height:90%;
+  background-color: gray;
+  top:50%;
+  left:0%;
+  transform: translateY(-50%);
+}
+
+.answer p{
+  font-size:1.4vh;
+  color: white;
+  padding:2vh;
+}
+
+.faqItem:target .answer {
+  max-height: 20vh;
+}
+
+.faqItem:target .answer .ion-md-add {
+  display:none;
+}
+
+.faqItem:target .answer .ion-md-remove {
+  display: block;
 }
 
 @media (max-width: 1200px) {
