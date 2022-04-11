@@ -64,6 +64,7 @@ html {
 }
 
 .seventhScreen {
+  height:100vh;
   left: 750vh;
   position:absolute;
 }
@@ -217,16 +218,20 @@ html {
   z-index: 105;
 }
 
-.info {
+.info,
+.accordionInfo {
   position:relative;
   width: 50vh;
   text-align: center;
   font-family: "ABeeZee";
   font-weight: 200;
   color: white;
-  background:rgba(0, 0, 0, 0.12);
   border-radius: 0.5vh;
   padding: 2vh;
+}
+
+.info {
+  background:rgba(0, 0, 0, 0.12);
 }
 
 .secondParagraph {
@@ -300,17 +305,13 @@ html {
 .time-slot {
   margin: -2.5vh;
   font-size: 1.8vh;
+  font-weight: 200;
+  margin-left: -6vh;
 }
 
 .title {
   margin: -2.5vh;
   font-size: 1.5vh;
-}
-
-.time-slot {
-  font-weight: 200;
-  font-size: 1.6vh;
-  margin-left: -6vh;
 }
 
 h2,
@@ -382,25 +383,6 @@ span {
   display: inline-block;
 }
 
-.faqInfo {
-  left: 200vh;
-  top: 37vh;
-  width: 80%;
-  align-items: center;
-  text-align: center;
-}
-
-.faq {
-  left: 300vh;
-  width: 300%;
-}
-
-.faqItem {
-  background-color: rgba(0,0,0,0.5);
-  margin-bottom: 1vh;
-  border-radius: 1vh;
-}
-
 .hide {
   clip: rect(0 0 0 0);
   height: 1px;
@@ -410,60 +392,94 @@ span {
   width: 1px;
 }
 
-.accordionLink {
-  font-size:1.6vh;
-  color:white;
+.accordionInfo {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.accordion {
+  height: 80vh;
+}
+
+.accordion2 {
+  height:76vh;
+}
+.accordion,
+.accordion2 {
+  position: relative;
+  bottom:-5vh;
+  display: grid;
+  grid-template-columns: [items] 65vh [item-1];
+  grid-template-rows: [rows] auto [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6];
+}
+
+.accordion-item {
+  position: relative;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding:0.5vh 0;
+  height: 70%;
+  border-radius: 2vh;
 }
 
-.accordionLink i {
-  color: pink;
-  padding: 0.5vh;
+.accordion-label {
+  display:block;
+  min-height: 7vh;
+  font-size: 2vh;
 }
 
-.accordionLink .ion-md-remove {
+.accordion-item:hover,
+.accordion-label:hover {
+  cursor: pointer;
+}
+
+.accordion-label:before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 10px;
+  top: 22px;
+  left: 12px;
+  display: inline-block;
+  border-left: 5px solid #999;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+input[type=checkbox]:checked~.accordion-label:before {
+  transform: rotate(90deg);
+}
+
+input[type=checkbox]:checked~.accordion-item {
+  position: relative;
+  margin-bottom: -10vh;
+}
+
+.accordion-child {
+  margin: 0;
+  overflow: hidden;
+  transition: all 0.1s ease;
+  opacity: 0;
+  height: 0;
+}
+
+hr {
   display: none;
 }
 
-.answer {
-  overflow: hidden;
-  max-height: 0;
-  position: relative;
-  background-color: gray;
-  transition: max-height 500ms;
+input[type=checkbox]:checked~.accordion-child {
+  font-size: 1.5vh;
+  margin-top: -1vh;
+  padding-top:3vh;
+  padding-bottom: 11vh;
+  height: auto;
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
-.answer::before {
-  content: "";
-  position: absolute;
-  width:0.6vh;
-  height:90%;
-  background-color: gray;
-  top:50%;
-  left:0%;
-  transform: translateY(-50%);
-}
-
-.answer p{
-  font-size:1.4vh;
-  color: white;
-  padding:2vh;
-}
-
-.faqItem:target .answer {
-  max-height: 20vh;
-}
-
-.faqItem:target .answer .ion-md-add {
-  display:none;
-}
-
-.faqItem:target .answer .ion-md-remove {
-  display: block;
+input[type=checkbox]:checked~hr {
+  display:block;
+  background-color: white;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 @media (max-width: 1200px) {
