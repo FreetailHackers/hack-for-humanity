@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#C2E0F9" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="description" content="Freetail Hacker's annual Learnathon" />
+    <link rel="shortcut icon" href="assets/misc/welcome penguin@3x.png" />
+    <link rel="apple-touch-icon" href="assets/misc/welcome penguin@3x.png" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <!--animations!-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Learnathon 2022</title>
+  </head>
+  <body>
+    <div class="website">
+      <div class="firstScreen absolute w-screen h-screen bottom-0">
+        <div class="background">
+          <div class="absolute bottom-0 left-0 space"></div>
+          <div class="mountains absolute w-full bottom-0">
+            <div
+              class="rellax furthest-mountain absolute bottom-0 left-0"
+              data-rellax-speed="7"
+            ></div>
+            <div
+              class="rellax middle-mountain absolute bottom-0 left-0"
+              data-rellax-speed="12"
+            ></div>
+            <div
+              class="rellax closest-mountain absolute bottom-0 left-0"
+              data-rellax-speed="20"
+            ></div>
+          </div>
+          <div class="foreground-snow absolute bottom-0 left-0"></div>
+          <div class="auroraElements">
+            <div class="glow">
+              <img src="assets/misc/Aurora Glow.svg" />
+            </div>
+            <div class="aurora">
+              <img src="assets/misc/Aurora.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="penguin">
+          <img src="assets/misc/welcome penguin.svg" />
+        </div>
+
+        <div class="sign-parent">
+          <img class="upperBigRopes" src="assets/misc/ropes.png" alt="" />
+          <img class="bigRopes" src="assets/misc/ropes.png" alt="" />
+          <img class="logo" src="assets/misc/LOGOhackforhumanity.svg" />
+          <div class="planks">
+            <img class="smallRopes" src="assets/misc/ropes.png" alt="" />
+            <div class="plank plank1">
+              <a
+                href="https://www.eventbrite.com/e/longhorn-hack-for-humanity-registration-308419550177"
+              >
+                <img src="assets/misc/plankbutton1.svg" alt="" />
+                <p>registration</p>
+              </a>
+            </div>
+            <img class="smallRopes" src="assets/misc/ropes.png" alt="" />
+            <div class="plank plank2">
+              <a
+                href="https://www.eventbrite.com/e/longhorn-hack-for-humanity-registration-308419550177?discount=MentorPenguin"
+              >
+                <img src="assets/misc/plankbutton2.svg" alt="" />
+                <p>mentor sign up</p>
+              </a>
+            </div>
+            <img class="smallRopes" src="assets/misc/ropes.png" alt="" />
+            <div class="plank plank3">
+              <a href="https://freetailhackers.com/">
+                <img src="assets/misc/plankbutton3.svg" alt="" />
+                <p>Freetail Hackers</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondScreen">
+        <div class="info" style="margin-top: 10vh; left: 30vmax">
+          <a>
+            <p style="font-size: 40px; line-height: 45px; margin-bottom: 15px">
+              What is Longhorn Hack for Humanity?
+            </p>
+            Hack for Humanity is an event hosted by Freetail Hackers that serves
+            to promote innovative ideas, implementations, and conversations
+            centered around positive change. We hope to address humanitarian
+            issues in the world through the tech space (projects to improve
+            human rights within and outside of the tech environment, address
+            humanitarian crises, diversity and equity solutions etc.). Hack for
+            Humanity aims to create a safe space for people both inside and
+            outside the tech community to converse and collaborate to make
+            lasting change and a better environment for everyone.
+          </a>
+        </div>
+        <div class="info secondParagraph" style="margin-top: -35vh">
+          <a>
+            <p style="font-size: 40px; line-height: 45px; margin-bottom: 15px">
+              Why come to Hack for Humanity?
+            </p>
+            If you've ever thought how the tech space could be used to be more
+            inclusive or better promote human rights and address humanitarian
+            crises, Longhorn Hack for Humanity is the event for you! Hack for
+            Humanity aims to help foster discussions and ideas that will change
+            the tech community for the better, and we highly encourage and
+            welcome all who want to make a lasting difference! As always we'll
+            have mentors to help answer any questions for your projects,
+            technical or otherwise!
+          </a>
+        </div>
+        <img
+          class="penguins"
+          style="bottom: -50vh; left: 45vh"
+          src="assets/penguins/Hacker penguin.svg"
+          alt=""
+        />
+        <img
+          class="penguins"
+          style="bottom: -55vh; left: 73vh"
+          src="assets/penguins/Farmer penguin.svg"
+          alt=""
+        />
+        <img
+          class="penguins"
+          style="bottom: -53vh; left: 100vh"
+          src="assets/penguins/Love penguin.svg"
+          alt=""
+        />
+        <img
+          class="post"
+          style="bottom: -53vh; left: 130vh"
+          src="assets/environment/post.png"
+          alt=""
+        />
+        <img
+          class="post post2"
+          style="bottom: -70vh"
+          src="assets/environment/pole w_ arrow.png"
+          alt=""
+        />
+      </div>
+      <div class="thirdScreen">
+        <div class="info thirdParagraph" style="top: 6vh; left: 80vh">
+          <a>
+            <p style="font-size: 40px; line-height: 45px; margin-bottom: 15px">
+              Who can attend?
+            </p>
+            The event is open to college students over 18 year old. This
+            includes undergraduate and graduate students from other
+            universities. All levels of experience and all majors are welcome!
+            Beginner? No problem! We'll have mentors and workshops to help you
+            develop new skills. All you need to come in with is a desire to
+            create. Interested in learning something new? We'll have plenty of
+            people to help teach you how to make an impact right from your own
+            desk! Check out our beginner hackathon starting guide here!
+          </a>
+        </div>
+        <img
+          class="penguins"
+          style="bottom: -63vh"
+          src="assets/penguins/Artist penguin.svg"
+          alt=""
+        />
+        <img
+          class="igloo"
+          style="bottom: -53vh; left: 45vh"
+          src="assets/environment/Igloo.svg"
+          alt=""
+        />
+        <img
+          class="rocks"
+          style="bottom: -53vh; left: 95vh"
+          src="assets/environment/rock1.svg"
+          alt=""
+        />
+      </div>
+      <div class="fourthScreen">
+        <div class="info" style="top: 10vh; left: 30vh">
+          <a>
+            <p style="font-size: 40px; line-height: 45px; margin-bottom: 15px">
+              Who are Freetail Hackers?
+            </p>
+            We're a group of UT Austin students who love organizing hackathons
+            for college students. We also love going to them. If you enjoy both
+            of these, you should apply to our team when applications open in
+            Fall or Spring! Applications will be posted on our Facebook page.
+            Need to reach out to us for any further questions or want to work
+            with us for the next event? Email us at hello@freetailhackers.com or
+            visit our website!
+          </a>
+        </div>
+        <img
+          class="penguins"
+          style="bottom: -66vh; left: -10vh"
+          src="assets/penguins/peace penguin.svg"
+          alt=""
+        />
+        <img
+          class="penguins"
+          style="bottom: -68vh; left: 20vh"
+          src="assets/penguins/polar bear.svg"
+          alt=""
+        />
+        <img
+          class="penguins"
+          style="bottom: -73vh; left: 50vh; transform: scale(0.4) !important"
+          src="assets/penguins/chef penguin.svg"
+          alt=""
+        />
+        <img
+          class="penguins"
+          style="bottom: -73vh; left: 75vh"
+          src="assets/environment/tree1.svg"
+          alt=""
+        />
+      </div>
+      <div class="fifthScreen">
+        <div class="info" style="margin-top: 20vh; left: 30vh">
+          <a>
+            <p style="font-size: 4vh; line-height: 4.5vh; margin-bottom: 15px">
+              Inclusion
+            </p>
+            As mentioned, Longhorn Hack for Humanity is designed for everyone.
+            In order to have a space that truly fosters growth, we require that
+            all our attendees, mentors, and organizers are respectful of each
+            other. To that end, all participants are expected to follow the MLH
+            Code of Conduct to facilitate a safe space and positive hackathon
+            experience for everyone!
+          </a>
+        </div>
+        <img
+          class="penguins"
+          style="bottom: -43vh; left: 30vh"
+          src="assets/environment/rock2.svg"
+          alt=""
+        />
+
+        <img
+          class="penguins"
+          style="bottom: -58vh; left: 55vh"
+          src="assets/environment/tree2.svg"
+          alt=""
+        />
+        <img
+          class="penguins"
+          style="bottom: -53vh; left: 80vh"
+          src="assets/penguins/winter penguin.svg"
+          alt=""
+        />
+        <img
+          class="penguins"
+          style="bottom: -48vh; left: 105vh"
+          src="assets/penguins/skii penguin.svg"
+          alt=""
+        />
+        <img
+          class="penguins"
+          style="bottom: -54vh; left: 130vh; transform: scale(0.4) !important"
+          src="assets/penguins/sensei penguin.svg"
+          alt=""
+        />
+        <div class="info" style="left: 120vh; bottom: 10vh">
+          <p style="font-size: 5vh; line-height: 4.5vh">Schedule ⟶</p>
+        </div>
+      </div>
+      <div class="sixthScreen">
+        <div class="schedule">
+          <span
+            class="track-slot"
+            style="grid-column: track-start2 / track-boba; grid-row: tracks"
+            >Friday</span
+          >
+          <span
+            class="track-slot"
+            style="grid-column: track-2-start / track-3-end; grid-row: tracks"
+            >Saturday</span
+          >
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-0800">
+            8:00am
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-0900">
+            9:00am
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1000">
+            10:00am
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1100">
+            11:00am
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1200">
+            12:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1300">
+            1:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1400">
+            2:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1500">
+            3:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1600">
+            4:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1700">
+            5:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1800">
+            6:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-1900">
+            7:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-2000">
+            8:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-2100">
+            9:00pm
+          </h2>
+          <h2 class="time-slot" style="grid-column: times; grid-row: time-2200">
+            10:00pm
+          </h2>
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-start / track-1;
+              grid-row: time-1000 / time-1500;
+              height: 105%;
+              margin-top: -0.5vh;
+              margin-left: 3vh;
+              margin-right: -3vh;
+            "
+          >
+            <h3 class="title" style="margin-top: 12vh">Enjoy Your Friday!</h3>
+          </div>
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-start / track-1;
+              grid-row: time-1600 / time-1800;
+              height: 90%;
+              margin-top: -0.5vh;
+              margin-left: 3vh;
+              margin-right: -3vh;
+            "
+          >
+            <h3 class="title" style="padding-top: 1.5vh">
+              Gong Cha Profit Share
+            </h3>
+            <h3 class="timing">Dobie</h3>
+            <h3 class="hiddenText">4pm-8pm</h3>
+          </div>
+
+          <div
+            class="track important"
+            style="
+              grid-column: track-start;
+              grid-row: time-1800 / time-1900;
+              height: 105%;
+              margin-top: -1vh;
+              margin-left: 3vh;
+              margin-right: -3vh;
+            "
+          >
+            <h3 class="title">Opening Ceremony</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">6pm-7pm</h3>
+          </div>
+          <div
+            class="track important hacking"
+            style="
+              grid-column: track-start2;
+              grid-row: time-1800 / time-1900;
+              height: 105%;
+              margin-top: -1vh;
+              margin-left: 3vh;
+              margin-right: -3vh;
+            "
+          >
+            <h3 class="title">HACKING STARTS!</h3>
+            <h3 class="timing">6pm</h3>
+          </div>
+          <div
+            class="track notImportant hacking"
+            style="
+              grid-column: track-boba-end;
+              grid-row: time-1800 / time-2000;
+              height: 105%;
+              margin-top: -1vh;
+              margin-left: 3vh;
+              margin-right: -3vh;
+            "
+          >
+            <h3 class="title" style="padding-top: 1.5vh">Gong Cha</h3>
+            <h3 class="title" style="padding-top: 2vh">Profit Share</h3>
+            <h3 class="timing" style="padding-top: -1vh">Dobie</h3>
+            <h3 class="hiddenText">4pm-8pm</h3>
+          </div>
+
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-start / track-start2;
+              grid-row: time-1900 / time-2100;
+              height: 95%;
+              margin-top: -0.4vh;
+              margin-left: 3vh;
+              margin-right: -3vh;
+            "
+          >
+            <h3 class="title" style="padding-top: 1.5vh">
+              Optional Team Matching
+            </h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">7pm-9pm</h3>
+          </div>
+          <div
+            class="track important"
+            style="
+              grid-column: track-2-start / track-3-end;
+              grid-row: time-0800 / time-1000;
+              height: 80%;
+              margin-top: 2vh;
+            "
+          >
+            <h3 class="title" style="padding-top: 1vh">Check In</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText" style="margin-left: -3.5vh">8:30am-10am</h3>
+          </div>
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-2-start / track-3-end;
+              grid-row: time-1100 / time-1200;
+              height: 100%;
+              margin-top: -1vh;
+            "
+          >
+            <h3 class="title">Workshop 1</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText" style="margin-left: -3.3vh">11am-12pm</h3>
+          </div>
+          <div
+            class="track important"
+            style="
+              grid-column: track-2-start / track-3-end;
+              grid-row: time-1200 / time-1300;
+              height: 100%;
+              margin-top: -0.2vh;
+            "
+          >
+            <h3 class="title">Lunch With Pengu Screening</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">12pm-1pm</h3>
+          </div>
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-2;
+              grid-row: time-1400 / time-1500;
+              height: 100%;
+              margin-top: -1.2vh;
+            "
+          >
+            <h3 class="title">Workshop 2</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">2pm-3pm</h3>
+          </div>
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-3;
+              grid-row: time-1400 / time-1500;
+              height: 100%;
+              margin-top: -1.2vh;
+            "
+          >
+            <h3 class="title">Game 1</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">2pm-3pm</h3>
+          </div>
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-2;
+              grid-row: time-1500 / time-1600;
+              height: 100%;
+              margin-top: -1vh;
+            "
+          >
+            <h3 class="title">Workshop 3</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">3pm-4pm</h3>
+          </div>
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-3;
+              grid-row: time-1500 / time-1600;
+              height: 100%;
+              margin-top: -1vh;
+            "
+          >
+            <h3 class="title">Game 2</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">3pm-4pm</h3>
+          </div>
+
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-2-start / track-3-end;
+              grid-row: time-1600 / time-1700;
+              height: 87%;
+              margin-top: -0.8vh;
+            "
+          >
+            <h3 class="title">Game 3</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">4pm-5pm</h3>
+          </div>
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-2-start / track-3-end;
+              grid-row: time-1700 / time-1800;
+              height: 110%;
+              margin-top: -1.1vh;
+              z-index: 800 !important;
+            "
+          >
+            <h3 class="title">Submission/Presentation Q&A</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">5pm-6pm</h3>
+          </div>
+          <div
+            class="track notImportant"
+            style="
+              grid-column: track-2;
+              grid-row: time-1800 / time-1900;
+              height: 105%;
+              margin-top: -0.2vh;
+            "
+          >
+            <h3 class="title">Socials + Snacks</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">6pm-7pm</h3>
+          </div>
+          <div
+            class="track important hacking"
+            style="
+              grid-column: track-3;
+              grid-row: time-1800 / time-1900;
+              height: 105%;
+              margin-top: -0.2vh;
+            "
+          >
+            <h3 class="title">HACKING ENDS!</h3>
+            <h3 class="timing">6pm</h3>
+          </div>
+
+          <div
+            class="track important"
+            style="
+              grid-column: track-2-start / track-3-end;
+              grid-row: time-1900 / time-2100;
+              height: 82%;
+              margin-top: 0.5vh;
+            "
+          >
+            <h3 class="title" style="padding-top: 0.8vh">Judging</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText">7pm-9pm</h3>
+          </div>
+          <div
+            class="track important"
+            style="
+              grid-column: track-2-start / track-3-end;
+              grid-row: time-2100 / time-2200;
+              margin-top: -1vh;
+              height: 110%;
+            "
+          >
+            <h3 class="title">Closing Ceremony</h3>
+            <h3 class="timing">Location</h3>
+            <h3 class="hiddenText" style="margin-left: -3vh">9pm-10pm</h3>
+          </div>
+        </div>
+      </div>
+      <div class="seventhScreen">
+        <div class="info faqInfo" style="margin-left: -80vh">
+          <p style="font-size: 5vh; line-height: 4.5vh">FAQ ⟶</p>
+        </div>
+        <div class="info faq" style="left: 180vh">
+          <div class="faqItem" id="question1">
+            <a class="accordionLink" href="#question1" type="checkbox">
+              How Do Teams Work?
+            </a>
+            <div class="answer">
+              <p>
+                Teams can be up to 3 members. If you don't have a team, don’t
+                worry! Joining a team of new friends is the best part of a
+                hackathon. We will have team matching available for everyone on
+                the day of the event, but if you would like to message our
+                channel and create a team beforehand, that's okay too! We will
+                have a form to fill out and confirm team information.
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question2">
+            <a class="accordion-link" href="#question2" type="checkbox">
+              How do I volunteer?
+            </a>
+            <div class="answer">
+              <p>
+                We always appreciate having mentors to coach teams throughout
+                the building process and anyone with tech experience is welcome
+                to help out. We are also looking for mentors with experience and
+                expertise in spaces that need humanitarian change. We want
+                students to create thoughtful change and part of that process
+                includes learning about the problem space they are trying to
+                create change in. Fill out the mentor form above and if you have
+                any other questions email us at hello@freetailhackers.com!
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question3">
+            <a class="accordion-link" href="#question3" type="checkbox">
+              How much money will this cost me?
+            </a>
+            <div class="answer">
+              <p>
+                Zero. Zip. Zilch. Nada. Nothing. Gratis. It's free!!! Freetail
+                Hackers will provide all attendees workshops, food, tech talks,
+                fun events, and prizes at no cost to you!!
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question4">
+            <a class="accordion-link" href="#question4" type="checkbox">
+              Any rules?
+            </a>
+            <div class="answer">
+              <p>
+                All work must be done during the 24-hour period of the event.
+                You can't demo something you didn't build. Don't talk about
+                Fight Club. All attendees (hackers, supporters, mentors,
+                volunteers, etc.) must abide by the MLH Code of Conduct.
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question5">
+            <a class="accordion-link" href="#question5" type="checkbox">
+              When is the Longhorn Hack for Humanity?
+            </a>
+            <div class="answer">
+              <p>
+                Saturday, April 22nd - Sunday, April 23rd. Opening Ceremony will
+                be on April 22nd at 6PM at the Computer Science Gates Dell
+                Complex (GDC) in the lecture hall 2.216. We will start the
+                virtual part of the hackathon then, and in person event
+                activities (including walk-in and check-in ) will be April 23rd
+                at GDC.
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question6">
+            <a class="accordion-link" href="#question6" type="checkbox">
+              When does registration close?
+            </a>
+            <div class="answer">
+              <p>
+                Registration closes when the Hackathon starts! Because of the
+                in-person setting, we want to open up the opportunity to as many
+                people as possible, however do fill up spots on a first come
+                first serve basis. We will open waitlists and allow for a
+                limited number of walk-ins on the day of! We would love it if
+                you could fill out the application as soon as possible to help
+                us plan for the event :)
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question7">
+            <a class="accordion-link" href="#question7" type="checkbox">
+              Will there be prizes and tracks?
+            </a>
+            <div class="answer">
+              <p>
+                Yes! We plan to give prizes to the top placing team in each
+                category. More information on this will be available on our
+                day-of-site available closer to the site.
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question8">
+            <a class="accordion-link" href="#question8" type="checkbox">
+              Will there be food at the event?
+            </a>
+            <div class="answer">
+              <p>
+                Yes! We will provide lunch to all registered attendees (mindful
+                of dietary restrictions and accommodations based on the
+                registration form). We will also be providing specialty snack
+                items around dinner and have a profit-share with Gong Cha
+                Boba from 4 - 8PM (mention Freetail Hackers) that is also a part
+                of the event!
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question9">
+            <a class="accordion-link" href="#question9" type="checkbox">
+              Where will walk-in check-in be?
+            </a>
+            <div class="answer">
+              <p>
+                It will be on the 3rd floor bridge of the Gates Dell Computer
+                Science Building (GDC 3.100)
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question10">
+            <a class="accordion-link" href="#question10" type="checkbox">
+              I am a mentor, what should I expect?
+            </a>
+            <div class="answer">
+              <p>
+                We thank you for taking the time to guide our students in
+                technical and non-technical aspects to help them design,
+                implement, present, and think about their projects! You do not
+                need any prior programming knowledge to mentor. We do not
+                require that you stay on-call or be available throughout the
+                entire hackathon, but at least contribute 2 hours at your
+                flexibility and help students at either the mentor lounge,
+                office hours or through the discord server. We will be providing
+                all mentors with lunch, snacks, a complimentary boba drink, and
+                the opportunity to interact with students through games,
+                workshops, or other events!
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question11">
+            <a class="accordion-link" href="#question11" type="checkbox">
+              Can I attend any of the events or workshops virtually?
+            </a>
+            <div class="answer">
+              <p>
+                No, this is a completely in-person hackathon. However, we will
+                make workshop recordings available later at our Youtube Channel!
+              </p>
+            </div>
+          </div>
+          <div class="faqItem" id="question12">
+            <a
+              class="accordion-link"
+              href="#question12"
+              type="checkbox"
+              checked
+            >
+              How can I get access to the Discord Server and be up-to date on
+              everything that is happening?
+            </a>
+            <div class="answer">
+              <p>
+                We will send a link to the server within a week leading up to
+                the event! Be on the lookout in your email on the account that
+                you registered for the event. All our announcements will be
+                available on this server, in-person screens, and on our
+                day-of-site which will be available as soon as the hackathon
+                begins!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script type="text/javascript" src="scroll.js"></script>
+    <script>
+      var rellax = new Rellax(".rellax", {
+        horizontal: true,
+        vertical: true,
+      });
+    </script>
+  </body>
+</html>
