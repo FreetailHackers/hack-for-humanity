@@ -20,9 +20,121 @@ html {
 @media only screen   
 and (min-device-width : 360px)   
 and (max-device-width : 640px) {
+    .website {
+        scroll-behavior: smooth;
+        overflow: hidden;
+        height: 500vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+      }
+      .firstScreen {
+        z-index: 1;
+        position: absolute;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+    .secondScreens {
+        z-index: 2;
+        position:absolute;
+        top: 99vh;
+        background-image: url("./assets/mobile/Snow background.svg");
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
 
+    .pathSec1 {
+        position: relative;
+        margin-top: 35%;
+    }
+
+    .mountains {
+        position: absolute;
+        height: auto;
+        bottom: 0;
+        left: 0;
+    }
+
+    .sign-parent {
+        position: relative;
+        left: 0;
+        top: -50%;
+        width: 80vw;
+        z-index: 3;
+      }
+      
+      .logo {
+        position: relative;
+        z-index: 100;
+        width: 100%;
+      }
+      
+      .planks {
+        width: 40%;
+        margin: 0 auto;
+      }
+      
+      .plank,
+      .plank img {
+        position: relative;
+        z-index: 105;
+        width: 100%;
+      
+      }
+      .plank:hover {
+        transform:scale(1.1);
+      }
+      .smallRopes,
+      .bigRopes {
+        
+        position: relative;
+        z-index: 85;
+        left:10%;
+        width: 80%;
+      }
+      
+      .bigRopes {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: -15%;
+        left:0% !important
+      }
+      
+      .upperBigRopes {
+        width: 60%;
+        margin: 0 auto;
+        top: 0%;
+      }
+      
+      .smallRopes:first-of-type {
+        position: relative;
+        z-index: 85;
+        margin-top: -30%;
+      }
+      .plank p {
+        margin-top: -7vh;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-family: "ABeeZee";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 3.5vh;
+        line-height: 4.3vh;
+        color: white;
+        text-shadow: -0.3vh -0.3vh 0 #000, 0.3vh -0.3vh 0 #000, -0.3vh 0.3vh 0 #000, 0.3vh 0.3vh 0 #000;
+        position: relative;
+        z-index: 105;
+      }
 }
 
+/* laptop/desktop */
 @media only screen and (min-device-width : 1200px) {
     ::-webkit-scrollbar {
         display: none;
@@ -101,7 +213,6 @@ and (max-device-width : 640px) {
         position: fixed;
         bottom: 0%;
         left:0;
-        
       }
       
       .furthest-mountain {
@@ -239,6 +350,7 @@ and (max-device-width : 640px) {
       
       .secondParagraph {
         left: 70vmax;
+
       }
       
       .penguins,
