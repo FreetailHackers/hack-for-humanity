@@ -1,6 +1,6 @@
 var down = false;
-function pullDown() {
-    var targetDiv = document.getElementById("myDiv");
+function pullDownSchedule() {
+    var targetDiv = document.getElementById("schedule-div");
     if (!down) {
         targetDiv.classList.remove("div-animation-up");
         targetDiv.classList.add("div-animation-down");

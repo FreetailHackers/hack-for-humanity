@@ -1,32 +1,40 @@
-.pull-down {
+body {
+    background-image: url("../assets/MountainView.png"), url("../assets/Sky.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: center, center;
+    background-size: cover, cover;
+}
+
+.schedule-button {
     position: absolute;
     width: 121px;
     height: 141px;
-    left: 69px; 
-    bottom: 69px;
+    left: 45px; 
+    bottom: 45px;
     background: url("../assets/plankbutton1.png") no-repeat center;
     background-size: cover;
     font-size: 25px;
+    z-index: 2;
+    border-radius: 10px;
 }
 
-.my-div {  
+.schedule {  
     background-color: #C3F2C8;
     display: block;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
+    top: -95px;
+    left: 5%;
+    width: 90%;
+    height: 105%;
     transform: translateY(-100%);
+    z-index: 1;
 }
 
-.my-div.div-animation-down {
-    animation: slide-down 0.3s ease-out forwards;
+.schedule.div-animation-down {
+    animation: slide-down 0.3s cubic-bezier(0, 0, 0.28, 1.46) forwards;
 }
 
-.my-div.div-animation-up {
+.schedule.div-animation-up {
     animation: slide-up 0.3s ease-out forwards;
 }
 
@@ -46,4 +54,12 @@
     100% { 
         transform: translateY(-100%);
     }
+}
+
+.hfh-logo {
+    position: absolute;
+    width: 458px;
+    height: 338px;
+    right: 73px;
+    top: 0px;
 }
