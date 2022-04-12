@@ -39,6 +39,9 @@ and (max-device-width : 640px) {
         height: 100vh;
         left: 0;
         top: 0;
+        background-image: url("./assets/mobile/Sky.svg");
+        background-size: cover;
+        justify-content: center;
     }
     .secondScreens {
         z-index: 2;
@@ -62,11 +65,11 @@ and (max-device-width : 640px) {
     }
 
     .sign-parent {
-        position: relative;
         left: 0;
-        top: -50%;
-        width: 80vw;
+        position: relative;
+        top: 0;
         z-index: 3;
+        height: 70%;
       }
       
       .logo {
