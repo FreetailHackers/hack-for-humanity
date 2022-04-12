@@ -1,5 +1,5 @@
 body {
-    background-image: url("../assets/MountainView.png"), url("../assets/Sky.png");
+    background-image: url("../assets/MountainView.svg"), url("../assets/Sky.png");
     background-repeat: no-repeat, no-repeat;
     background-position-x: center, center;
     background-size: cover, cover;
