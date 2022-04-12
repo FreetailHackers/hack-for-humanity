@@ -263,8 +263,8 @@
           src="assets/penguins/sensei penguin.svg"
           alt=""
         />
-        <div class="info" style="left: 120vh; bottom: 10vh; width: 120%">
-          <p style="font-size: 5vh; line-height: 4.5vh">Schedule & FAQ ⟶</p>
+        <div class="info" style="left: 120vh; bottom: 10vh; width: 80%">
+          <p style="font-size: 5vh; line-height: 4.5vh">Schedule ⟶</p>
         </div>
       </div>
       <div class="sixthScreen">
@@ -592,10 +592,13 @@
         </div>
       </div>
       <div class="seventhScreen">
+        <div class="info" style="left: 175vh; top: 4vh; width: 10%">
+          <p style="font-size: 5vh; line-height: 4.5vh">FAQ</p>
+        </div>
         <ul
           class="accordion info"
           style="
-            margin-left: 110vh;
+            margin-left: 120vh;
             margin-bottom: 10vh;
             background-color: transparent;
           "
@@ -608,7 +611,7 @@
               onchange="cbChange(this)"
             />
             <label for="s1" class="accordion-label">How do teams work?</label>
-            <hr style="margin-top: -2.5vh" />
+            <hr style="margin-top: -1.5vh" />
             <p class="accordion-child">
               Teams can be up to 3 members. If you don't have a team, don’t
               worry! Joining a team of new friends is the best part of a
@@ -616,26 +619,6 @@
               the day of the event, but if you would like to message our channel
               and create a team beforehand, that's okay too! We will have a form
               to fill out and confirm team information.
-            </p>
-          </label>
-          <label class="accordionInfo accordion-item">
-            <input
-              id="s2"
-              class="hide"
-              type="checkbox"
-              onchange="cbChange(this)"
-            />
-            <label for="s2" class="accordion-label">How do I volunteer?</label>
-            <hr style="margin-top: -2.5vh" />
-            <p class="accordion-child">
-              We always appreciate having mentors to coach teams throughout the
-              building process and anyone with tech experience is welcome to
-              help out. We are also looking for mentors with experience and
-              expertise in spaces that need humanitarian change. We want
-              students to create thoughtful change and part of that process
-              includes learning about the problem space they are trying to
-              create change in. Fill out the mentor form above and if you have
-              any other questions email us at hello@freetailhackers.com!
             </p>
           </label>
           <label class="accordionInfo accordion-item">
@@ -648,7 +631,7 @@
             <label for="s3" class="accordion-label"
               >How much money will this cost me?</label
             >
-            <hr style="margin-top: -2.5vh" />
+            <hr style="margin-top: -1.5vh" />
             <p class="accordion-child">
               Zero. Zip. Zilch. Nada. Nothing. Gratis. It's free!!! Freetail
               Hackers will provide all attendees workshops, food, tech talks,
@@ -663,7 +646,7 @@
               onchange="cbChange(this)"
             />
             <label for="s4" class="accordion-label">Any Rules?</label>
-            <hr style="margin-top: -2.5vh" />
+            <hr style="margin-top: -1.5vh" />
             <p class="accordion-child">
               All work must be done during the 24-hour period of the event. You
               can't demo something you didn't build. Don't talk about Fight
@@ -681,7 +664,7 @@
             <label for="s5" class="accordion-label"
               >When is the Longhorn Hack for Humanity?</label
             >
-            <hr style="margin-top: -2.5vh" />
+            <hr style="margin-top: -1.5vh" />
             <p class="accordion-child">
               Saturday, April 22nd - Sunday, April 23rd. Opening Ceremony will
               be on April 22nd at 6PM at the Computer Science Gates Dell Complex
@@ -700,7 +683,7 @@
             <label for="s6" class="accordion-label"
               >When does registration close?</label
             >
-            <hr style="margin-top: -2.5vh" />
+            <hr style="margin-top: -1.5vh" />
             <p class="accordion-child">
               Registration closes when the Hackathon starts! Because of the
               in-person setting, we want to open up the opportunity to as many
@@ -711,8 +694,45 @@
               :)
             </p>
           </label>
+          <label class="accordionInfo accordion-item">
+            <input
+              id="s2"
+              class="hide"
+              type="checkbox"
+              onchange="cbChange(this)"
+            />
+            <label for="s2" class="accordion-label">How do I volunteer?</label>
+            <hr style="margin-top: -1.5vh" />
+            <p class="accordion-child">
+              We always appreciate having mentors to coach teams throughout the
+              building process and anyone with tech experience is welcome to
+              help out. We are also looking for mentors with experience and
+              expertise in spaces that need humanitarian change. We want
+              students to create thoughtful change and part of that process
+              includes learning about the problem space they are trying to
+              create change in. Fill out the mentor form above and if you have
+              any other questions email us at hello@freetailhackers.com!
+            </p>
+          </label>
         </ul>
-        <ul class="accordion2" style="margin-left: 180vh; margin-top: -88vh">
+        <ul class="accordion2" style="margin-left: 200vh; margin-top: -62vh">
+          <label class="accordionInfo accordion-item">
+            <input
+              id="s9"
+              class="hide"
+              type="checkbox"
+              onchange="cbChange(this)"
+            />
+            <label for="s9" class="accordion-label"
+              >Where will walk-in check-in be?</label
+            >
+            <hr style="margin-top: -1.5vh" />
+            <p class="accordion-child">
+              It will be on the 3rd floor bridge of the Gates Dell Computer
+              Science Building (GDC 3.100)
+            </p>
+          </label>
+
           <label class="accordionInfo accordion-item">
             <input
               id="s7"
@@ -723,7 +743,7 @@
             <label for="s7" class="accordion-label"
               >Will there be prizes and tracks?</label
             >
-            <hr style="margin-top: -2.5vh" />
+            <hr style="margin-top: -1.5vh" />
             <p class="accordion-child">
               Yes! We plan to give prizes to the top placing team in each
               category. More information on this will be available on our
@@ -740,53 +760,13 @@
             <label for="s8" class="accordion-label"
               >Will there be food at the event?</label
             >
-            <hr style="margin-top: -2.5vh" />
+            <hr style="margin-top: -1.5vh" />
             <p class="accordion-child">
               Yes! We will provide lunch to all registered attendees (mindful of
               dietary restrictions and accommodations based on the registration
               form). We will also be providing specialty snack items around
               dinner and have a profit-share with Gong Cha Boba from 4 - 8PM
               (mention Freetail Hackers) that is also a part of the event!
-            </p>
-          </label>
-          <label class="accordionInfo accordion-item">
-            <input
-              id="s9"
-              class="hide"
-              type="checkbox"
-              onchange="cbChange(this)"
-            />
-            <label for="s9" class="accordion-label"
-              >Where will walk-in check-in be?</label
-            >
-            <hr style="margin-top: -2.5vh" />
-            <p class="accordion-child">
-              It will be on the 3rd floor bridge of the Gates Dell Computer
-              Science Building (GDC 3.100)
-            </p>
-          </label>
-          <label class="accordionInfo accordion-item">
-            <input
-              id="s10"
-              class="hide"
-              type="checkbox"
-              onchange="cbChange(this)"
-            />
-            <label for="s10" class="accordion-label"
-              >I am a mentor, what should I expect?</label
-            >
-            <hr style="margin-top: -2.5vh" />
-            <p class="accordion-child">
-              We thank you for taking the time to guide our students in
-              technical and non-technical aspects to help them design,
-              implement, present, and think about their projects! You do not
-              need any prior programming knowledge to mentor. We do not require
-              that you stay on-call or be available throughout the entire
-              hackathon, but at least contribute 2 hours at your flexibility and
-              help students at either the mentor lounge, office hours or through
-              the discord server. We will be providing all mentors with lunch,
-              snacks, a complimentary boba drink, and the opportunity to
-              interact with students through games, workshops, or other events!
             </p>
           </label>
           <label class="accordionInfo accordion-item">
@@ -799,7 +779,7 @@
             <label for="s11" class="accordion-label"
               >Can I attend any of the events or workshops virtually?</label
             >
-            <hr style="margin-top: -2.5vh" />
+            <hr style="margin-top: -1.5vh" />
             <p class="accordion-child">
               No, this is a completely in-person hackathon. However, we will
               make workshop recordings available later at our Youtube Channel!
@@ -816,13 +796,37 @@
               >How can I get access to the Discord Server and be up-to date on
               everything that is happening?</label
             >
-            <hr style="margin-top: 0.4vh" />
+            <hr style="margin-top: 2vh" />
             <p class="accordion-child">
               We will send a link to the server within a week leading upto the
               event! Be on the lookout in your email on the account that you
               registered for the event. All our announcements will be available
               on this server, in-person screens, and on our day-of-site which
               will be available as soon as the hackathon begins!
+            </p>
+          </label>
+          <label class="accordionInfo accordion-item">
+            <input
+              id="s10"
+              class="hide"
+              type="checkbox"
+              onchange="cbChange(this)"
+            />
+            <label for="s10" class="accordion-label"
+              >I am a mentor, what should I expect?</label
+            >
+            <hr style="margin-top: -1.5vh" />
+            <p class="accordion-child">
+              We thank you for taking the time to guide our students in
+              technical and non-technical aspects to help them design,
+              implement, present, and think about their projects! You do not
+              need any prior programming knowledge to mentor. We do not require
+              that you stay on-call or be available throughout the entire
+              hackathon, but at least contribute 2 hours at your flexibility and
+              help students at either the mentor lounge, office hours or through
+              the discord server. We will be providing all mentors with lunch,
+              snacks, a complimentary boba drink, and the opportunity to
+              interact with students through games, workshops, or other events!
             </p>
           </label>
         </ul>

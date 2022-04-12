@@ -60,13 +60,13 @@ html {
   width: 75%;
   height: 87%;
   margin-top: 6vh;
-  background:rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.12);
 }
 
 .seventhScreen {
-  height:100vh;
+  height: 100vh;
   left: 750vh;
-  position:absolute;
+  position: absolute;
 }
 
 .space {
@@ -93,8 +93,7 @@ html {
   width: 500%;
   position: fixed;
   bottom: 0%;
-  left:0;
-  
+  left: 0;
 }
 
 .furthest-mountain {
@@ -132,7 +131,7 @@ html {
   background-image: url("./assets/misc/Snow\ Foreground.png");
   background-position: bottom;
   bottom: 0%;
-  left:0;
+  left: 0;
 }
 
 .penguin {
@@ -168,18 +167,16 @@ html {
   position: relative;
   z-index: 105;
   width: 100%;
-
 }
 .plank:hover {
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 
 .smallRopes,
 .bigRopes {
-  
   position: relative;
   z-index: 85;
-  left:10%;
+  left: 10%;
   width: 80%;
 }
 
@@ -187,7 +184,7 @@ html {
   width: 60%;
   margin: 0 auto;
   margin-bottom: -15%;
-  left:0% !important
+  left: 0% !important;
 }
 
 .upperBigRopes {
@@ -213,14 +210,15 @@ html {
   font-size: 3.5vh;
   line-height: 4.3vh;
   color: white;
-  text-shadow: -0.3vh -0.3vh 0 #000, 0.3vh -0.3vh 0 #000, -0.3vh 0.3vh 0 #000, 0.3vh 0.3vh 0 #000;
+  text-shadow: -0.3vh -0.3vh 0 #000, 0.3vh -0.3vh 0 #000, -0.3vh 0.3vh 0 #000,
+    0.3vh 0.3vh 0 #000;
   position: relative;
   z-index: 105;
 }
 
 .info,
 .accordionInfo {
-  position:relative;
+  position: relative;
   width: 50vh;
   text-align: center;
   font-family: "ABeeZee";
@@ -231,7 +229,7 @@ html {
 }
 
 .info {
-  background:rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.12);
 }
 
 .secondParagraph {
@@ -242,7 +240,7 @@ html {
 .post {
   position: absolute;
   transform: scale(0.5);
-  width:100%;
+  width: 100%;
 }
 
 .post {
@@ -252,19 +250,19 @@ html {
 .igloo {
   transform: scale(1.2);
   position: absolute;
-  width:100%;
+  width: 100%;
 }
 
 .sign {
   position: absolute;
   transform: scale(0.3);
-  width:100%;
+  width: 100%;
 }
 
 .rocks {
   position: absolute;
   transform: scale(0.7);
-  width:100%;
+  width: 100%;
 }
 
 .schedule {
@@ -273,16 +271,13 @@ html {
   height: 83vh;
   display: grid;
   grid-gap: 0.1vh;
-  grid-template-rows:
-    [tracks] auto [time-0800] 1fr [time-0900] 1fr [time-1000] 1fr [time-1100] 1fr [time-1200] 1fr [time-1300] 1fr [time-1400] 1fr [time-1500] 1fr [time-1600] 1fr [time-1700] 1fr [time-1800] 1fr [time-1900] 1fr [time-2000] 1fr [time-2100] 1fr [time-2200];
-  ;
-  grid-template-columns:
-    [times] 0fr [track-start-start] 0.2fr [track-start-end track-newGap-start] 0.02fr [track-newGap-end track-start2-start] 0.2fr [track-start2-end track-boba-start] 0.02fr [track-boba-start track-boba-end] 0.2fr [track-1-end track-gap-start] 0.2fr [track-1-end track-2-start] 0.25fr [track-2-start track-2-end] 0.02fr [track-2-end track-3-start] 0.25fr [track-3-start track-3-end] 0.01fr [track-3-end track-4-start] 0.15fr [track-4-end];
+  grid-template-rows: [tracks] auto [time-0800] 1fr [time-0900] 1fr [time-1000] 1fr [time-1100] 1fr [time-1200] 1fr [time-1300] 1fr [time-1400] 1fr [time-1500] 1fr [time-1600] 1fr [time-1700] 1fr [time-1800] 1fr [time-1900] 1fr [time-2000] 1fr [time-2100] 1fr [time-2200];
+  grid-template-columns: [times] 0fr [track-start-start] 0.2fr [track-start-end track-newGap-start] 0.02fr [track-newGap-end track-start2-start] 0.2fr [track-start2-end track-boba-start] 0.02fr [track-boba-start track-boba-end] 0.2fr [track-1-end track-gap-start] 0.2fr [track-1-end track-2-start] 0.25fr [track-2-start track-2-end] 0.02fr [track-2-end track-3-start] 0.25fr [track-3-start track-3-end] 0.01fr [track-3-end track-4-start] 0.15fr [track-4-end];
 }
 
 .schedule::after {
   display: block;
-  content: '';
+  content: "";
   position: sticky;
   top: 0;
   grid-column: track-1 / -1;
@@ -325,7 +320,7 @@ h2,
 .timing {
   position: relative;
   text-align: center;
-  margin-top:0.1vh;
+  margin-top: 0.1vh;
 }
 
 .timing {
@@ -341,14 +336,14 @@ span {
 .important {
   align-items: center;
   color: #fff;
-  z-index:900;
+  z-index: 900;
   margin: 0;
-  padding: .7vh;
+  padding: 0.7vh;
   font-size: 1.4vh;
   border-radius: 1.5vh;
 }
 .track {
-    background-color: rgba(29, 29, 29, 0.8);
+  background-color: rgba(29, 29, 29, 0.8);
 }
 .important {
   background-color: rgba(40, 129, 70, 0.8);
@@ -356,10 +351,10 @@ span {
 
 .hiddenText {
   position: absolute;
-  margin-top:-1.2vh;
+  margin-top: -1.2vh;
   font-size: 1.2vh;
   display: none;
-  margin-left: -2.5vh
+  margin-left: -2.5vh;
 }
 
 .track:hover {
@@ -374,7 +369,7 @@ span {
 }
 
 .track:hover .timing {
-  margin-top:-1vh;
+  margin-top: -1vh;
   transform: scale(0.83);
 }
 
@@ -393,35 +388,36 @@ span {
 }
 
 .accordionInfo {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .accordion {
-  height: 80vh;
+  height: 54vh;
 }
 
 .accordion2 {
-  height:76vh;
+  height: 50vh;
 }
+
 .accordion,
 .accordion2 {
   position: relative;
-  bottom:-5vh;
+  bottom: -7vh;
   display: grid;
-  grid-template-columns: [items] 65vh [item-1];
-  grid-template-rows: [rows] auto [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6];
+  grid-template-columns: [items] 70vh [item-1];
+  grid-template-rows: [rows] 1fr [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6];
+  row-gap: 2vh;
 }
 
 .accordion-item {
   position: relative;
   width: 100%;
-  height: 70%;
   border-radius: 2vh;
 }
 
 .accordion-label {
-  display:block;
-  min-height: 7vh;
+  display: block;
+  height: 5vh;
   font-size: 2vh;
 }
 
@@ -431,7 +427,7 @@ span {
 }
 
 .accordion-label:before {
-  content: '';
+  content: "";
   position: absolute;
   height: 5px;
   width: 10px;
@@ -443,19 +439,14 @@ span {
   border-bottom: 5px solid transparent;
 }
 
-input[type=checkbox]:checked~.accordion-label:before {
+input[type="checkbox"]:checked ~ .accordion-label:before {
   transform: rotate(90deg);
-}
-
-input[type=checkbox]:checked~.accordion-item {
-  position: relative;
-  margin-bottom: -10vh;
 }
 
 .accordion-child {
   margin: 0;
+  position: relative;
   overflow: hidden;
-  transition: all 0.1s ease;
   opacity: 0;
   height: 0;
 }
@@ -464,22 +455,23 @@ hr {
   display: none;
 }
 
-input[type=checkbox]:checked~.accordion-child {
+input[type="checkbox"]:checked ~ .accordion-child {
   font-size: 1.5vh;
   margin-top: -1vh;
-  padding-top:3vh;
-  padding-bottom: 11vh;
-  height: auto;
+  padding-top: 3vh;
+  text-align: left;
   opacity: 1;
   transform: scale(1, 1);
+  height: 100%;
+  transition: height 0.3s ease-out;
 }
 
-input[type=checkbox]:checked~hr {
-  display:block;
+input[type="checkbox"]:checked ~ hr {
+  display: block;
   background-color: white;
-  width:80%;
-  margin-left:auto;
-  margin-right:auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 1200px) {
@@ -511,8 +503,17 @@ input[type=checkbox]:checked~hr {
   .schedule {
     width: 103vh;
   }
-  
+
   .post2 {
     left: -25vh;
+  }
+  .accordion {
+    left: 20vh;
+  }
+  .accordion2 {
+    left: 20vh;
+  }
+  .accordionInfo {
+    left: -30vh;
   }
 }
