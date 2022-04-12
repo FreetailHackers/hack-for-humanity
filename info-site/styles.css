@@ -1,24 +1,46 @@
 body {
-    background-image: url("../assets/MountainView.svg"), url("../assets/Sky.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position-x: center, center;
-    background-size: cover, cover;
+    background-image: url("assets/Sky.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
-.schedule-button {
+.assets {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+
+.mountains {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 30px;
+    left: 0px;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.map-button {
     position: absolute;
     width: 121px;
     height: 141px;
     left: 45px; 
     bottom: 45px;
-    background: url("../assets/plankbutton1.svg") no-repeat center;
+    background: url("assets/plankbutton1.svg") no-repeat center;
     background-size: cover;
     font-size: 25px;
-    z-index: 2;
+    z-index: 1000;
     border-radius: 10px;
 }
 
-.schedule {  
+.map {  
     background-color: #C3F2C8;
     display: block;
     position: absolute;
@@ -27,14 +49,14 @@ body {
     width: 90%;
     height: 105%;
     transform: translateY(-100%);
-    z-index: 1;
+    z-index: 999;
 }
 
-.schedule.div-animation-down {
-    animation: slide-down 0.3s cubic-bezier(0, 0, 0.28, 1.46) forwards;
+.map.div-animation-down {
+    animation: slide-down 0.3s ease-out forwards;
 }
 
-.schedule.div-animation-up {
+.map.div-animation-up {
     animation: slide-up 0.3s ease-out forwards;
 }
 
@@ -62,4 +84,16 @@ body {
     height: 338px;
     right: 73px;
     top: 0px;
+    z-index: 100;
+}
+
+.skii-penguin {
+    position: relative;
+    width: 17%;
+    height: auto;
+    left: 690px;
+    top: 380px;
+    right: auto;
+    bottom: 5;
+    z-index: 100;
 }
