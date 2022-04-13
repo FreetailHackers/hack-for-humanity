@@ -428,7 +428,7 @@ span {
 }
 
 .accordion-item:last-of-type {
-  box-shadow: 0.3vh 0.3vh 0.3vh rgba(40, 129, 70, 0.8);
+  box-shadow: 0.32vh 0.32vh 0.32vh rgba(40, 129, 70, 0.8);
 }
 
 .accordion-label {
@@ -558,8 +558,11 @@ input[type="checkbox"]:checked ~ hr {
     left: -30vh;
   }
 
-  .sponsorInfo {
+  .faq {
+    margin-left: -20vh;
   }
-  .likewiseLogo {
+
+  .lastIgloo {
+    left: 60vh !important;
   }
 }
