@@ -562,7 +562,8 @@ input[type="checkbox"]:checked ~ hr {
     margin-left: -20vh;
   }
 
-  .lastIgloo {
-    left: 60vh !important;
+  .cabin {
+    left: 68vh !important;
+    transform: scale(0.2);
   }
 }
