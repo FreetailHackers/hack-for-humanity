@@ -22,8 +22,6 @@ html {
 .website {
   scroll-behavior: smooth;
   overflow: hidden;
-  width: 600vw;
-  margin: 0;
   display: flex;
   flex-direction: row;
   user-select: none;
@@ -69,6 +67,13 @@ html {
   position: absolute;
 }
 
+.eigthScreen {
+  position: absolute;
+  left: 1050vh;
+  top: 0;
+  height: 100%;
+}
+
 .space {
   z-index: -99;
   position: fixed;
@@ -96,37 +101,32 @@ html {
   left: 0;
 }
 
-.furthest-mountain {
+.furthest-mountain,
+.middle-mountain,
+.closest-mountain {
+  position: absolute;
   background-repeat: repeat-x;
   width: 100%;
   height: 100vh;
-  background-image: url("./assets/misc/Distant\ Mountain.svg");
   background-position: bottom;
   background-attachment: fixed;
+}
+.furthest-mountain {
+  background-image: url("./assets/misc/Distant\ Mountain.svg");
 }
 
 .middle-mountain {
-  background-repeat: repeat-x;
-  width: 100%;
-  height: 100vh;
   background-image: url("./assets/misc/Middle\ Mountain.svg");
-  background-position: bottom;
-  background-attachment: fixed;
 }
 
 .closest-mountain {
-  background-repeat: repeat-x;
-  width: 100%;
-  height: 100vh;
   background-image: url("./assets/misc/Closest\ Mountain.svg");
-  background-position: bottom;
-  background-attachment: fixed;
 }
 
 .foreground-snow {
   position: absolute;
   background-repeat: repeat-x;
-  width: 1200vh;
+  width: 1220vh;
   height: 100vh;
   background-image: url("./assets/misc/Snow\ Foreground.png");
   background-position: bottom;
@@ -217,7 +217,8 @@ html {
 }
 
 .info,
-.accordionInfo {
+.accordionInfo,
+.faqInfo {
   position: relative;
   width: 50vh;
   text-align: center;
@@ -263,6 +264,12 @@ html {
   position: absolute;
   transform: scale(0.7);
   width: 100%;
+}
+
+.headers {
+  font-size: 5vh;
+  line-height: 4.5vh;
+  text-align: center;
 }
 
 .schedule {
@@ -409,10 +416,19 @@ span {
   row-gap: 2vh;
 }
 
-.accordion-item {
+.accordion-item,
+.accordion-item:last-of-type {
   position: relative;
   width: 100%;
   border-radius: 2vh;
+}
+
+.accordion-item {
+  box-shadow: 0.23vh 0.23vh 0.23vh rgba(40, 129, 70, 0.8);
+}
+
+.accordion-item:last-of-type {
+  box-shadow: 0.3vh 0.3vh 0.3vh rgba(40, 129, 70, 0.8);
 }
 
 .accordion-label {
@@ -446,6 +462,7 @@ input[type="checkbox"]:checked ~ .accordion-label:before {
 .accordion-child {
   margin: 0;
   position: relative;
+  font-size: 0;
   overflow: hidden;
   opacity: 0;
   height: 0;
@@ -454,7 +471,16 @@ input[type="checkbox"]:checked ~ .accordion-label:before {
 hr {
   display: none;
 }
-
+input[type="checkbox"]:checked ~ .accordion-label p {
+  background: linear-gradient(
+    to right,
+    rgb(40, 129, 70) 20%,
+    rgb(152, 252, 152)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 input[type="checkbox"]:checked ~ .accordion-child {
   font-size: 1.5vh;
   margin-top: -1vh;
@@ -474,17 +500,29 @@ input[type="checkbox"]:checked ~ hr {
   margin-right: auto;
 }
 
+.sponsorInfo {
+  margin-left: 23vh;
+  margin-top: 20vh;
+  width: 100vh;
+}
+
+.likewiseLogo {
+  margin-top: 10vh;
+  margin-left: 45vh;
+  width: 50%;
+}
+
 @media (max-width: 1200px) {
   .website {
     width: 700vw;
   }
 
   .penguin {
-    transform: scale(1.2);
+    transform: scale(0.9);
   }
 
   .sign-parent {
-    right: -70%;
+    right: -30%;
   }
 
   .secondParagraph {
@@ -492,7 +530,10 @@ input[type="checkbox"]:checked ~ hr {
     left: 110vmax;
   }
 
-  .mountains,
+  .mountains {
+    width: 1000vmax;
+  }
+
   .foreground-snow {
     width: 1200vmax;
   }
@@ -515,5 +556,10 @@ input[type="checkbox"]:checked ~ hr {
   }
   .accordionInfo {
     left: -30vh;
+  }
+
+  .sponsorInfo {
+  }
+  .likewiseLogo {
   }
 }
