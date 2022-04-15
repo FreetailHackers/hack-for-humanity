@@ -19,16 +19,23 @@
 html {
   scrollbar-width: none;
 }
-.website {
+.website,
+.mobile {
   scroll-behavior: smooth;
   overflow: hidden;
-  display: flex;
   flex-direction: row;
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
+}
+.website {
+  display: flex;
+}
+
+.mobile {
+  display: none;
 }
 
 .secondScreen {
@@ -557,7 +564,6 @@ input[type="checkbox"]:checked ~ hr {
   .accordionInfo {
     left: -30vh;
   }
-
   .faq {
     margin-left: -20vh;
   }
@@ -565,5 +571,123 @@ input[type="checkbox"]:checked ~ hr {
   .cabin {
     left: 68vh !important;
     transform: scale(0.2);
+  }
+}
+
+@media screen and (max-device-width: 700px) {
+  .website {
+    display: none;
+  }
+
+  .mobile {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    height: 500vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+  }
+  .firstScreen {
+    z-index: 1;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-image: url("./assets/mobile/Sky.svg");
+    background-size: cover;
+    justify-content: center;
+  }
+  .secondScreens {
+    z-index: 2;
+    position: absolute;
+    top: 99vh;
+    background-image: url("./assets/mobile/Snow background.svg");
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+
+  .pathSec1 {
+    position: relative;
+    margin-top: 35%;
+  }
+
+  .mountains {
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    left: 0;
+  }
+
+  .sign-parent {
+    left: 0;
+    position: relative;
+    top: 0;
+    z-index: 3;
+    height: 70%;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+  }
+
+  .planks {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .plank,
+  .plank img {
+    position: relative;
+    z-index: 105;
+    width: 100%;
+  }
+  .smallRopes,
+  .bigRopes {
+    position: relative;
+    z-index: 85;
+    left: 10%;
+    width: 80%;
+  }
+
+  .bigRopes {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: -15%;
+    left: 0% !important;
+  }
+
+  .upperBigRopes {
+    width: 60%;
+    margin: 0 auto;
+    top: 0%;
+  }
+
+  .smallRopes:first-of-type {
+    position: relative;
+    z-index: 85;
+    margin-top: -30%;
+  }
+  .plank p {
+    margin-top: -5vh;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "ABeeZee";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2.5vh;
+    line-height: 3.3vh;
+    color: white;
+    text-shadow: -0.3vh -0.3vh 0 #000, 0.3vh -0.3vh 0 #000, -0.3vh 0.3vh 0 #000,
+      0.3vh 0.3vh 0 #000;
+    position: relative;
+    z-index: 105;
   }
 }
