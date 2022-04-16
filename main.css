@@ -296,7 +296,8 @@ html {
   text-align: center;
 }
 
-.schedule {
+.schedule,
+.schedule-mobile {
   margin-left: 10vh;
   width: 88%;
   height: 83vh;
