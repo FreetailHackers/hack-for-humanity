@@ -18,6 +18,8 @@
 
 html {
   scrollbar-width: none;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .website,
 .mobile {
@@ -225,18 +227,33 @@ html {
 
 .info,
 .accordionInfo,
-.faqInfo {
+.faqInfo,
+.info-mobile {
   position: relative;
-  width: 50vh;
   text-align: center;
   font-family: "ABeeZee";
   font-weight: 200;
   color: white;
   border-radius: 0.5vh;
-  padding: 2vh;
+  z-index: 50;
 }
 
-.info {
+.info,
+.accordionInfo,
+.faqInfo {
+    width: 50vh;
+    padding: 2vh;
+}
+
+
+.info-mobile {
+    width:50vw;
+    padding:2vw;
+    font-size: 3vw;
+}
+
+.info,
+.info-mobile {
   background: rgba(0, 0, 0, 0.12);
 }
 
@@ -614,6 +631,11 @@ input[type="checkbox"]:checked ~ hr {
 
   .pathSec1-mobile {
     position: relative;
+    margin-top: -10%;
+  }
+
+  .pathSec2-mobile {
+    position: relative;
     margin-top: 35%;
   }
 
@@ -694,9 +716,15 @@ input[type="checkbox"]:checked ~ hr {
   }
 
   .penguins-mobile {
-    position: relative;
-    transform: scale(0.5);
+    position: absolute;
+    transform: scale(0.25);
     width: 100%;
+    z-index: 1000;
+    bottom: 0;
+  }
+
+  .info-mobile p {
+    font-size: 4vw; line-height: 20px; margin-bottom: 15px;
   }
 }
 
