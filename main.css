@@ -592,7 +592,7 @@ input[type="checkbox"]:checked ~ hr {
     -webkit-user-select: none;
     -o-user-select: none;
   }
-  .firstScreen {
+  .firstScreen-mobile {
     z-index: 1;
     position: absolute;
     height: 100vh;
@@ -602,7 +602,8 @@ input[type="checkbox"]:checked ~ hr {
     background-size: cover;
     justify-content: center;
   }
-  .secondScreens {
+  
+  .secondScreen-mobile {
     z-index: 2;
     position: absolute;
     top: 99vh;
@@ -611,19 +612,19 @@ input[type="checkbox"]:checked ~ hr {
     background-repeat: repeat-y;
   }
 
-  .pathSec1 {
+  .pathSec1-mobile {
     position: relative;
     margin-top: 35%;
   }
 
-  .mountains {
+  .mountains-mobile {
     position: absolute;
     height: auto;
     bottom: 0;
     left: 0;
   }
 
-  .sign-parent {
+  .sign-parent-mobile {
     left: 0;
     position: relative;
     top: 0;
@@ -631,50 +632,51 @@ input[type="checkbox"]:checked ~ hr {
     height: 70%;
   }
 
-  .logo {
+  .logo-mobile {
     position: relative;
     z-index: 100;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
   }
 
-  .planks {
+  .planks-mobile {
     width: 40%;
     margin: 0 auto;
   }
 
-  .plank,
-  .plank img {
+  .plank-mobile,
+  .plank-mobile img {
     position: relative;
     z-index: 105;
     width: 100%;
   }
-  .smallRopes,
-  .bigRopes {
+  .smallRopes-mobile,
+  .bigRopes-mobile {
     position: relative;
     z-index: 85;
     left: 10%;
     width: 80%;
   }
 
-  .bigRopes {
+  .bigRopes-mobile {
     width: 60%;
     margin: 0 auto;
     margin-bottom: -15%;
     left: 0% !important;
   }
 
-  .upperBigRopes {
+  .upperBigRopes-mobile {
     width: 60%;
     margin: 0 auto;
     top: 0%;
   }
 
-  .smallRopes:first-of-type {
+  .smallRopes-mobile:first-of-type {
     position: relative;
     z-index: 85;
     margin-top: -30%;
   }
-  .plank p {
+  .plank-mobile p {
     margin-top: -5vh;
     margin-bottom: 0;
     width: 100%;
@@ -690,4 +692,24 @@ input[type="checkbox"]:checked ~ hr {
     position: relative;
     z-index: 105;
   }
+
+  .penguins-mobile {
+    position: relative;
+    transform: scale(0.5);
+    width: 100%;
+  }
+}
+
+@media screen and (min-device-height: 700px) {
+    .smallRopes-mobile:first-of-type {
+        margin-top:-25%;
+    }
+
+    .smallRopes-mobile {
+        margin-top:8%;
+    }
+    .plank-mobile {
+        width: 120%;
+        margin-left:-9.5%;
+    }
 }
