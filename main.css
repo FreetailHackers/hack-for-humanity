@@ -726,6 +726,15 @@ input[type="checkbox"]:checked ~ hr {
   .info-mobile p {
     font-size: 4vw; line-height: 20px; margin-bottom: 15px;
   }
+
+  .thirdScreen-mobile {
+    z-index: 2;
+    position: absolute;
+    top: 394vh;
+    background-image: url("./assets/mobile/Snow background.svg");
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
 }
 
 @media screen and (min-device-height: 700px) {
