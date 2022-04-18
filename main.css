@@ -456,7 +456,7 @@ span {
 }
 
 .accordion-mobile {
-  grid-template-rows: [rows] 1fr [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6] 1fr [row-7] 1fr [row-8] 1fr [row-9] 1fr [row-10] 1fr [row-11] 1fr [row-12];
+  grid-template-rows: [rows] 1fr [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6] 1fr [row-7] 1fr [row-8] 1fr [row-9] 1fr [row-10] 1fr [row-11] 1fr [row-12] 1fr [row-13] 1fr [row14];
   grid-template-columns: [items] 70vw [item-1];
 }
 
@@ -682,7 +682,7 @@ input[type="checkbox"]:checked ~ hr {
   .background-mobile {
     position: absolute;
     z-index: -10;
-    height: 1600vw;
+    height: 1700vw;
     width: 100vw;
     background-image: url("./assets/mobile/Snow background.svg");
   }
@@ -725,9 +725,9 @@ input[type="checkbox"]:checked ~ hr {
 
   .sponsor-mobile {
     line-height: 10vw;
-    width: 90%;
-    margin-top: 230vw;
-    margin-left: 8vw;
+    width: 120%;
+    margin-top: 240vw;
+    margin-left: 3vw;
   }
 
   .pathSec1-mobile {
