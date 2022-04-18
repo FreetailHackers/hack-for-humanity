@@ -41,15 +41,74 @@ body {
 }
 
 .map {  
-    background-color: #C3F2C8;
+    background: url("assets/map/backgroundMap.svg") no-repeat center;
     display: block;
     position: absolute;
-    top: -95px;
+    top: -35px;
     left: 5%;
     width: 90%;
     height: 105%;
     transform: translateY(-100%);
+    z-index: 2;
+}
+
+#schedule {  
+    position: absolute;
+    left: 115px;
+    width: 90%;
+    height: 105%;
+    display: flex;
+    align-items: center;
+}
+
+#imgINSIDE{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
     z-index: 999;
+}
+
+#FAQ {  
+    position: absolute;
+    top: -35px;
+    left: -440px;
+    width: 90%;
+    height: 105%;
+    display: flex;
+    align-items: center;
+}
+#challenge {  
+    position: absolute;
+    top: 170px;
+    left: 160px;
+    width: 90%;
+    height: 105%;
+    display: flex;
+    align-items: center;
+}
+#resources {  
+    position: absolute;
+    top: 55px;
+    left: 500px;
+    width: 90%;
+    height: 105%;
+    display: flex;
+    align-items: center;
+}
+#home {  
+    position: absolute;
+    top: 145px;
+    left: -370px;
+    width: 90%;
+    height: 105%;
+    display: flex;
+    align-items: center;
+}
+
+#imgINSIDE:hover { 
+    transform: scale(1.2);
 }
 
 .map.div-animation-down {
