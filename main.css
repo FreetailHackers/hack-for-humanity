@@ -320,7 +320,8 @@ html {
 
 .schedule-mobile,
 .schedule-mobile2 {
-  width: 77% !important;
+  width: 75% !important;
+  margin-left: 25vw;
 }
 
 .schedule::after {
@@ -456,7 +457,7 @@ span {
 
 .accordion-mobile {
   grid-template-rows: [rows] 1fr [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6] 1fr [row-7] 1fr [row-8] 1fr [row-9] 1fr [row-10] 1fr [row-11] 1fr [row-12];
-  grid-template-columns: [items] 30vh [item-1];
+  grid-template-columns: [items] 70vw [item-1];
 }
 
 .accordion,
@@ -625,6 +626,23 @@ input[type="checkbox"]:checked ~ hr {
   }
 }
 
+@media screen and (max-device-width: 380px) {
+  .fourthScreen-mobile {
+    top: 1030vw !important;
+  }
+
+  .accordion-item-mobile {
+    margin-left: 65vw !important;
+  }
+
+  .trouble1 {
+    margin-top: -4vw !important;
+  }
+
+  .trouble2 {
+    margin-top: -6vw !important;
+  }
+}
 @media screen and (max-device-width: 700px) {
   .website {
     display: none;
@@ -633,7 +651,7 @@ input[type="checkbox"]:checked ~ hr {
   .background-mobile {
     position: absolute;
     z-index: -10;
-    height: 700vh;
+    height: 850vh;
     width: 100vw;
     background-image: url("./assets/mobile/Snow background.svg");
   }
@@ -661,7 +679,7 @@ input[type="checkbox"]:checked ~ hr {
   }
   .firstScreen-mobile {
     position: absolute;
-    height: 100vh;
+    height: 101vh;
     left: 0;
     top: 0;
     background-image: url("./assets/mobile/Sky.svg");
@@ -670,15 +688,16 @@ input[type="checkbox"]:checked ~ hr {
   }
 
   .secondScreen-mobile {
-    top: 99vh;
+    top: 180vw;
   }
 
   .thirdScreen-mobile {
-    top: 740vw;
+    top: 720vw;
   }
 
   .fourthScreen-mobile {
-    top: 506vh;
+    top: 1080vw;
+    width: 100vw;
   }
 
   .pathSec1-mobile {
@@ -779,6 +798,10 @@ input[type="checkbox"]:checked ~ hr {
     font-size: 4vw;
     line-height: 20px;
     margin-bottom: 15px;
+  }
+
+  .accordion-item-mobile {
+    margin-left: 75vw;
   }
 }
 
