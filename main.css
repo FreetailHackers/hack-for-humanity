@@ -471,7 +471,6 @@ span {
 
 .accordion-item,
 .accordion-item:last-of-type {
-  z-index: 100000;
   position: relative;
   width: 100%;
   border-radius: 2vh;
@@ -627,9 +626,6 @@ input[type="checkbox"]:checked ~ hr {
 }
 
 @media screen and (max-device-width: 380px) and (-webkit-device-pixel-ratio: 2) {
-  .accordion-item-mobile {
-    margin-left: 65vw !important;
-  }
   .fourthScreen-mobile {
     top: 1030vw !important;
   }
@@ -666,11 +662,16 @@ input[type="checkbox"]:checked ~ hr {
   }
 
   .fourthScreen-mobile {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
     top: 1120vw !important;
   }
 
   .likewize-mobile {
-    margin-left: -100vw;
+    width: 150vw;
+    margin-left: auto;
+    margin-right: auto;
     transform: scale(0.8);
   }
 }
@@ -721,6 +722,8 @@ input[type="checkbox"]:checked ~ hr {
   .fourthScreen-mobile {
     top: 1080vw;
     width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sponsor-mobile {
