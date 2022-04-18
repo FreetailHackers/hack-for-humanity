@@ -652,8 +652,8 @@ input[type="checkbox"]:checked ~ hr {
   }
 
   .likewize-mobile {
+    margin-left: -30vw;
     transform: scale(0.9);
-    margin-left: -75vw !important;
   }
 }
 
@@ -670,8 +670,8 @@ input[type="checkbox"]:checked ~ hr {
   }
 
   .likewize-mobile {
+    margin-left: -30vw;
     transform: scale(0.8);
-    margin-left: -75vw !important;
   }
 }
 @media screen and (max-device-width: 700px) {

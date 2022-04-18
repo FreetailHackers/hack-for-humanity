@@ -41,3 +41,4 @@
       }
       if (window.attachEvent) window.addEvent("onkeydown", handler, false);
       else window.addEventListener("keydown", handler, false);
+
