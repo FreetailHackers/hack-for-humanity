@@ -18,7 +18,7 @@
 
 html {
   scrollbar-width: none;
-  overflow:scroll;
+  overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 .website,
@@ -241,15 +241,14 @@ html {
 .info,
 .accordionInfo,
 .faqInfo {
-    width: 50vh;
-    padding: 2vh;
+  width: 50vh;
+  padding: 2vh;
 }
 
-
 .info-mobile {
-    width:50vw;
-    padding:2vw;
-    font-size: 3vw;
+  width: 50vw;
+  padding: 2vw;
+  font-size: 3vw;
 }
 
 .info,
@@ -297,14 +296,31 @@ html {
 }
 
 .schedule,
-.schedule-mobile {
+.schedule-mobile,
+.schedule-mobile2 {
   margin-left: 10vh;
   width: 88%;
   height: 83vh;
   display: grid;
   grid-gap: 0.1vh;
   grid-template-rows: [tracks] auto [time-0800] 1fr [time-0900] 1fr [time-1000] 1fr [time-1100] 1fr [time-1200] 1fr [time-1300] 1fr [time-1400] 1fr [time-1500] 1fr [time-1600] 1fr [time-1700] 1fr [time-1800] 1fr [time-1900] 1fr [time-2000] 1fr [time-2100] 1fr [time-2200];
+}
+
+.schedule {
   grid-template-columns: [times] 0fr [track-start-start] 0.2fr [track-start-end track-newGap-start] 0.02fr [track-newGap-end track-start2-start] 0.2fr [track-start2-end track-boba-start] 0.02fr [track-boba-start track-boba-end] 0.2fr [track-1-end track-gap-start] 0.2fr [track-1-end track-2-start] 0.25fr [track-2-start track-2-end] 0.02fr [track-2-end track-3-start] 0.25fr [track-3-start track-3-end] 0.01fr [track-3-end track-4-start] 0.15fr [track-4-end];
+}
+
+.schedule-mobile {
+  grid-template-columns: [times] 0fr [track-start-start] 0.25fr [track-start-end track-newGap-start] 0.025fr [track-newGap-end track-start2-start] 0.25fr [track-start2-end track-boba-start] 0.025fr [track-boba-start track-boba-end] 0.25fr [track-1-end track-gap-start] 0.25fr;
+}
+
+.schedule-mobile2 {
+  grid-template-columns: [times] 0fr [track-1-end track-2-start] 1fr [track-2-start track-2-end] 0.02fr [track-2-end track-3-start] 1fr [track-3-start track-3-end] 0.02fr [track-3-end track-4-start] 1fr [track-4-end];
+}
+
+.schedule-mobile,
+.schedule-mobile2 {
+  width: 77% !important;
 }
 
 .schedule::after {
@@ -423,20 +439,33 @@ span {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.accordion {
+.accordion,
+.accordion-mobile {
   height: 54vh;
 }
 
-.accordion2 {
+.accordion2,
+.accordion-mobile2 {
   height: 50vh;
 }
 
 .accordion,
 .accordion2 {
+  grid-template-columns: [items] 70vh [item-1];
+}
+
+.accordion-mobile,
+.accordion-mobile2 {
+  grid-template-columns: [items] 10vh [item-1];
+}
+
+.accordion,
+.accordion2,
+.accordion-mobile,
+.accordion-mobile2 {
   position: relative;
   bottom: -7vh;
   display: grid;
-  grid-template-columns: [items] 70vh [item-1];
   grid-template-rows: [rows] 1fr [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6];
   row-gap: 2vh;
 }
@@ -597,6 +626,14 @@ input[type="checkbox"]:checked ~ hr {
     display: none;
   }
 
+  .background-mobile {
+    position: absolute;
+    z-index: -10;
+    height: 700vh;
+    width: 100vw;
+    background-image: url("./assets/mobile/Snow background.svg");
+  }
+
   .mobile {
     scroll-behavior: smooth;
     overflow: hidden;
@@ -610,8 +647,15 @@ input[type="checkbox"]:checked ~ hr {
     -webkit-user-select: none;
     -o-user-select: none;
   }
+
+  .secondScreen-mobile,
+  .thirdScreen-mobile,
+  .fourthScreen-mobile {
+    background-size: cover;
+    background-repeat: repeat-y;
+    position: absolute;
+  }
   .firstScreen-mobile {
-    z-index: 1;
     position: absolute;
     height: 100vh;
     left: 0;
@@ -620,14 +664,17 @@ input[type="checkbox"]:checked ~ hr {
     background-size: cover;
     justify-content: center;
   }
-  
+
   .secondScreen-mobile {
-    z-index: 2;
-    position: absolute;
     top: 99vh;
-    background-image: url("./assets/mobile/Snow background.svg");
-    background-size: cover;
-    background-repeat: repeat-y;
+  }
+
+  .thirdScreen-mobile {
+    top: 740vw;
+  }
+
+  .fourthScreen-mobile {
+    top: 506vh;
   }
 
   .pathSec1-mobile {
@@ -725,29 +772,22 @@ input[type="checkbox"]:checked ~ hr {
   }
 
   .info-mobile p {
-    font-size: 4vw; line-height: 20px; margin-bottom: 15px;
-  }
-
-  .thirdScreen-mobile {
-    z-index: 2;
-    position: absolute;
-    top: 394vh;
-    background-image: url("./assets/mobile/Snow background.svg");
-    background-size: cover;
-    background-repeat: repeat-y;
+    font-size: 4vw;
+    line-height: 20px;
+    margin-bottom: 15px;
   }
 }
 
 @media screen and (min-device-height: 700px) {
-    .smallRopes-mobile:first-of-type {
-        margin-top:-25%;
-    }
+  .smallRopes-mobile:first-of-type {
+    margin-top: -25%;
+  }
 
-    .smallRopes-mobile {
-        margin-top:8%;
-    }
-    .plank-mobile {
-        width: 120%;
-        margin-left:-9.5%;
-    }
+  .smallRopes-mobile {
+    margin-top: 8%;
+  }
+  .plank-mobile {
+    width: 120%;
+    margin-left: -9.5%;
+  }
 }
