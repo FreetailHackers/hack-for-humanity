@@ -444,34 +444,33 @@ span {
   height: 54vh;
 }
 
-.accordion2,
-.accordion-mobile2 {
+.accordion2 {
   height: 50vh;
 }
 
 .accordion,
 .accordion2 {
+  grid-template-rows: [rows] 1fr [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6];
   grid-template-columns: [items] 70vh [item-1];
 }
 
-.accordion-mobile,
-.accordion-mobile2 {
-  grid-template-columns: [items] 10vh [item-1];
+.accordion-mobile {
+  grid-template-rows: [rows] 1fr [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6] 1fr [row-7] 1fr [row-8] 1fr [row-9] 1fr [row-10] 1fr [row-11] 1fr [row-12];
+  grid-template-columns: [items] 30vh [item-1];
 }
 
 .accordion,
 .accordion2,
-.accordion-mobile,
-.accordion-mobile2 {
+.accordion-mobile {
   position: relative;
   bottom: -7vh;
   display: grid;
-  grid-template-rows: [rows] 1fr [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6];
   row-gap: 2vh;
 }
 
 .accordion-item,
 .accordion-item:last-of-type {
+  z-index: 100000;
   position: relative;
   width: 100%;
   border-radius: 2vh;
@@ -485,18 +484,21 @@ span {
   box-shadow: 0.32vh 0.32vh 0.32vh rgba(40, 129, 70, 0.8);
 }
 
-.accordion-label {
+.accordion-label,
+.question {
   display: block;
   height: 5vh;
   font-size: 2vh;
 }
 
 .accordion-item:hover,
-.accordion-label:hover {
+.accordion-label:hover,
+.question:hover {
   cursor: pointer;
 }
 
-.accordion-label:before {
+.accordion-label:before,
+.question:before {
   content: "";
   position: absolute;
   height: 5px;
@@ -509,7 +511,8 @@ span {
   border-bottom: 5px solid transparent;
 }
 
-input[type="checkbox"]:checked ~ .accordion-label:before {
+input[type="checkbox"]:checked ~ .accordion-label:before,
+input[type="checkbox"]:checked ~ .question:before {
   transform: rotate(90deg);
 }
 
@@ -525,7 +528,7 @@ input[type="checkbox"]:checked ~ .accordion-label:before {
 hr {
   display: none;
 }
-input[type="checkbox"]:checked ~ .accordion-label p {
+input[type="checkbox"]:checked ~ .question {
   background: linear-gradient(
     to right,
     rgb(40, 129, 70) 20%,
@@ -535,6 +538,7 @@ input[type="checkbox"]:checked ~ .accordion-label p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 input[type="checkbox"]:checked ~ .accordion-child {
   font-size: 1.5vh;
   margin-top: -1vh;
@@ -757,8 +761,8 @@ input[type="checkbox"]:checked ~ hr {
     font-size: 2.5vh;
     line-height: 3.3vh;
     color: white;
-    text-shadow: -0.3vh -0.3vh 0 #000, 0.3vh -0.3vh 0 #000, -0.3vh 0.3vh 0 #000,
-      0.3vh 0.3vh 0 #000;
+    text-shadow: -0.4vw -0.4vw 0 #000, 0.4vw -0.4vw 0 #000, -0.4vw 0.4vw 0 #000,
+      0.4vw 0.4vw 0 #000;
     position: relative;
     z-index: 105;
   }
