@@ -2,6 +2,8 @@ body {
     background-image: url("assets/Sky.svg");
     background-repeat: no-repeat;
     background-size: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .assets {
@@ -25,6 +27,7 @@ body {
     left: 0px;
     z-index: 1;
     object-fit: contain;
+    overflow-x: hidden;
 }
 
 .map-button {
@@ -54,7 +57,7 @@ body {
     width: 90%;
     height: 105%;
     transform: translateY(-100%);
-    z-index: 2;
+    z-index: 1000;
 }
 
 #schedule {  
@@ -84,6 +87,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 #challenge {  
     position: absolute;
     top: 170px;
@@ -93,6 +97,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 #resources {  
     position: absolute;
     top: 55px;
@@ -102,6 +107,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 #home {  
     position: absolute;
     top: 145px;
