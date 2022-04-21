@@ -317,6 +317,9 @@ html {
   grid-template-columns: [times] 0fr [track-1-end track-2-start] 1fr [track-2-start track-2-end] 0.02fr [track-2-end track-3-start] 1fr [track-3-start track-3-end] 0.02fr [track-3-end track-4-start] 1fr [track-4-end];
 }
 
+.bridge {
+  font-size: 1.2vh !important;
+}
 .schedule-mobile,
 .schedule-mobile2 {
   width: 75% !important;
@@ -666,8 +669,7 @@ input[type="checkbox"]:checked ~ hr {
 
   .likewize-mobile {
     width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30vw;
     transform: scale(0.8);
   }
 }
@@ -833,7 +835,6 @@ input[type="checkbox"]:checked ~ hr {
   }
 
   .accordion-item-mobile {
-
   }
 }
 
