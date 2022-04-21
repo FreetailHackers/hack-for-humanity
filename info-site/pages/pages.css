@@ -1,0 +1,77 @@
+
+body {
+    background-image: url("../assets/Sky.svg"), url(../assets/Snow-background.svg);
+    background-repeat: no-repeat, repeat;
+    background-size: 100%, auto;
+    z-index: 1, 2;
+    overflow-y: scroll;
+}
+
+.map-button {
+    position: fixed;
+    width: 121px;
+    height: 141px;
+    left: 45px; 
+    bottom: 45px;
+    background: url("../assets/map/map.svg") no-repeat center;
+    background-size: cover;
+    font-size: 25px;
+    z-index: 1000;
+    border-radius: 10px;
+    border: none;
+}
+
+.map-button:hover { 
+    transform: scale(1.2);
+}
+
+.assets {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+
+.mountains {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 30px;
+    left: 0px;
+    z-index: 2;
+    object-fit: contain;
+}
+
+.penguin1 {
+    position: relative;
+    width: 17%;
+    height: auto;
+    left: 900px;
+    top: 380px;
+    right: auto;
+    bottom: 5;
+    z-index: 3;
+}
+
+.text{
+    position: relative;
+    text-align: center;
+    top: 150px;
+    font-family: "ABeeZee";
+    font-weight: 200;
+    color: black;
+    border-radius: 0.5vh;
+    z-index: 50;
+    width: 50vh;
+    padding: 2vh;
+    background: rgba(255, 255, 255, 0.692);
+}
+
+
+
