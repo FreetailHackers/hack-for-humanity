@@ -73,5 +73,128 @@ body {
     background: rgba(255, 255, 255, 0.692);
 }
 
+.schedule{
+  margin-left: 10vh;
+  width: 88%;
+  height: 83vh;
+  display: grid;
+  grid-gap: 0.1vh;
+  grid-template-rows: [tracks] auto [time-0800] 1fr [time-0900] 1fr [time-1000] 1fr [time-1100] 1fr [time-1200] 1fr [time-1300] 1fr [time-1400] 1fr [time-1500] 1fr [time-1600] 1fr [time-1700] 1fr [time-1800] 1fr [time-1900] 1fr [time-2000] 1fr [time-2100] 1fr [time-2200];
+  grid-template-columns: [times] 0fr [track-start-start] 0.2fr [track-start-end track-newGap-start] 0.02fr [track-newGap-end track-start2-start] 0.2fr [track-start2-end track-boba-start] 0.02fr [track-boba-start track-boba-end] 0.2fr [track-1-end track-gap-start] 0.2fr [track-1-end track-2-start] 0.25fr [track-2-start track-2-end] 0.02fr [track-2-end track-3-start] 0.25fr [track-3-start track-3-end] 0.01fr [track-3-end track-4-start] 0.15fr [track-4-end];
+}
+
+.schedule::after {
+  display: block;
+  content: "";
+  position: sticky;
+  top: 0;
+  grid-column: track-1 / -1;
+  grid-row: tracks;
+  z-index: 999;
+}
+
+.track-slot {
+    display: block;
+    position: sticky;
+    margin-top: 2.5vh;
+    z-index: 1000;
+    font-family: "ABeeZee";
+    font-weight: 200;
+    color: white;
+    font-size: 5vh;
+    text-align: center;
+  }
+
+  .time-slot {
+    margin: -2.5vh;
+    font-size: 1.8vh;
+    font-weight: 200;
+    margin-left: -6vh;
+    z-index: 999;
+  }
+  
+  .title {
+    margin: -2.5vh;
+    font-size: 1.5vh;
+  }
+  
+  h2,
+  .title,
+  .timing {
+    font-family: "ABeeZee";
+    color: white;
+  }
+  
+  .title,
+  .timing {
+    position: relative;
+    text-align: center;
+    margin-top: 0.1vh;
+  }
+  
+  .timing {
+    font-size: 1.3vh;
+    padding-top: 2vh;
+  }
+  
+  span {
+    display: block;
+  }
+  
+  .track,
+  .important {
+    align-items: center;
+    color: #fff;
+    z-index: 900;
+    margin: 0;
+    padding: 0.7vh;
+    font-size: 1.4vh;
+    border-radius: 1.5vh;
+  }
+  .track {
+    background-color: rgba(29, 29, 29, 0.8);
+  }
+  .important {
+    background-color: rgba(40, 129, 70, 0.8);
+  }
+  
+  .hiddenText {
+    position: absolute;
+    margin-top: -1.2vh;
+    font-size: 1.2vh;
+    display: none;
+    margin-left: -2.5vh;
+  }
+  
+  .track:hover {
+    align-items: center;
+    text-align: center;
+    transform: scale(1.2);
+  }
+  
+  .track:hover .title {
+    margin-top: -0.5vh;
+    transform: scale(0.83);
+  }
+  
+  .track:hover .timing {
+    margin-top: -1vh;
+    transform: scale(0.83);
+  }
+  
+  .track:hover .hiddenText {
+    padding-top: 0.7vh;
+    display: inline-block;
+  }
+  
+  .hide {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
 
 
