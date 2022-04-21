@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: ABeeZee;
+    src: url(assets/fonts/ABeeZee-Regular.ttf);
+}
+
 body {
     background-image: url("assets/Sky.svg");
     background-repeat: no-repeat;
@@ -162,9 +171,58 @@ body {
     position: relative;
     width: 17%;
     height: auto;
-    left: 690px;
-    top: 380px;
-    right: auto;
-    bottom: 5;
+    top: 45%;
+    left: 37%;
     z-index: 100;
+}
+
+.home-blurb {
+    position: absolute;
+    z-index: 500;
+    text-align: center;
+    background-position: center;
+    height: 30%;
+    width: 25%;
+}
+
+.home-blurb p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "ABeeZee";
+    font-size: 250%;
+}
+
+.home-blurb:hover {
+    transform: scale(1.2);
+}
+
+p a {
+    color: black;
+    text-decoration: none;
+}
+
+#top.home-blurb {
+    background-image: url("assets/HomeBlurbTop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 15%;
+    left: 18%;
+}
+
+#bottom.home-blurb {
+    background-image: url("assets/HomeBlurbBottom.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 20%;
+    bottom: 3%;
+}
+
+#top.home-blurb p {
+    margin-top: 8%;
+    line-height: 150%;
+}
+
+#bottom.home-blurb p {
+    margin-top: 14.5%;
+    line-height: 150%;;
 }

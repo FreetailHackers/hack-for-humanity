@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
     background-image: url("../assets/Sky.svg"), url(../assets/Snow-background.svg);
@@ -146,8 +149,6 @@ body {
     align-items: center;
     color: #fff;
     z-index: 900;
-    margin: 0;
-    padding: 0.7vh;
     font-size: 1.4vh;
     border-radius: 1.5vh;
   }
@@ -196,5 +197,15 @@ body {
     width: 1px;
   }
 
+.sixthScreen {
+  border-radius: 1vh;
+  position: absolute;
+  top: 4%;
+  width: 75%;
+  height: 87%;
+  left: 12.5%;
+  background: rgba(0, 0, 0, 0.12);
+  z-index: 200;
+}
 
 
