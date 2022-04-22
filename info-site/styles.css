@@ -11,8 +11,6 @@ body {
     background-image: url("assets/Sky.svg");
     background-repeat: no-repeat;
     background-size: auto;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .assets {
@@ -40,7 +38,7 @@ body {
 }
 
 .map-button {
-    position: absolute;
+    position: fixed;
     width: 121px;
     height: 141px;
     left: 45px; 
@@ -68,6 +66,18 @@ body {
     height: 105%;
     transform: translateY(-100%);
     z-index: 1000;
+}
+
+.mapmobile {  
+    display: none;
+    position: fixed;
+    background-color: darkblue;
+    top: -35px;
+    width: 97%;
+    height: 90%;
+    transform: translateY(-100%);
+    z-index: 1000;
+    border-radius: 50px;
 }
 
 #schedule {  
@@ -137,6 +147,14 @@ body {
 }
 
 .map.div-animation-up {
+    animation: slide-up 0.3s ease-out forwards;
+}
+
+.mapmobile.div-animation-down {
+    animation: slide-down 0.3s ease-out forwards;
+}
+
+.mapmobile.div-animation-up {
     animation: slide-up 0.3s ease-out forwards;
 }
 
@@ -225,4 +243,13 @@ p a {
 #bottom.home-blurb p {
     margin-top: 14.5%;
     line-height: 150%;;
+}
+
+@media only screen and (max-width: 1400px) {
+    .map{
+        display: none;
+    }
+    .mapmobile{
+        display: block;
+    }
 }
