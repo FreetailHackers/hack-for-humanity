@@ -13,9 +13,11 @@
           <h1>Schedule</h1>
         </div>
         <div class="assets">
-          <img class="mountains" src="../assets/MountainView.svg" />
-          <img class="snow" src="../assets/SnowBackground.svg" />
-          <img class="snow-path" src="../assets/SnowPath.svg" />
+          <div class="mountains"></div>
+          <div class="snow"></div>
+          <img class="top-penguin" src="../assets/penguinIcon.svg" />
+          <img class="middle-penguin" src="../assets/penguinIcon.svg" />
+          <img class="bottom-penguin" src="../assets/penguinIcon.svg" />
         </div>
         <div class="sixthScreen">
           <div class="schedule">
@@ -339,9 +341,21 @@
                 <h3 class="timing">GDC 3.216</h3>
                 <h3 class="hiddenText" style="margin-left: -3vh">9pm-10pm</h3>
               </div>
-            </div>
           </div>
         </div>
+
+
+        <div style = "
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;">
+        <img class="friday" src="../assets/friday.png" />
+        <img class="saturday" src="../assets/saturday.png" />
+        </div>
+        
         <div id="map-div" class="map">
             <div id="challenge">
                 <img onclick="window.location.href='challenges.html'" id="imgINSIDE" src="../assets/map/challengesButton.svg" />
@@ -359,6 +373,21 @@
                 <img onclick="window.location.href='schedule.html'" id="imgINSIDE" src="../assets/map/scheduleButton.svg" />
             </div>
         </div>
+        <div id="map-div-mobile" class="mapmobile">
+          <p  class="text" onclick="window.location.href='../index.html'" style="margin-bottom: 20px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px; width: 70%;">
+              <b>Home</b>
+          </p>
+          <p  class="text" onclick="window.location.href='challenges.html'" style="margin-bottom: 20px; left: 5vw;  text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+              <b>Challenges</b>
+          </p>
+          <p  class="text" onclick="window.location.href='schedule.html'" style="margin-bottom: 20px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+              <b>Schedule</b>
+          </p>
+          <p  class="text" onclick="window.location.href='faq.html'" style="margin-bottom: 40px; left: 5vw; text-align: left; font-size: 30px; line-height: 40px;  width: 70%;">
+              <b>FAQ</b>
+          </p>
+
+      </div>
         <button class="map-button" onclick="pullDownSchedule()"></button>
     </body>
 </html>

@@ -83,6 +83,7 @@ body {
 .title {
   margin: -2.5vh;
   font-size: 1.5vh;
+  line-height: 30px;
 }
 
 h2,
@@ -129,6 +130,7 @@ span {
   font-size: 1.2vh;
   display: none;
   margin-left: -2.5vh;
+  font-family: "ABeeZee";
 }
 
 .track:hover {
@@ -321,4 +323,38 @@ ul a {
 
 .top-inf0-blurb ul a:hover, .middle-info-blurb ul a:hover {
   color: gray;
+}
+
+.friday{
+  display: none;
+  position: absolute;
+  top: 800px;
+  z-index: 1000;
+}
+.saturday{
+  display: none;
+  position: absolute;
+  top: 1600px;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sixthScreen{
+    display: none;
+  }
+  .page-head {
+    font-size: 5vw;
+  }
+  .friday{
+    display: block;
+    position: absolute;
+    top: 850px;
+    z-index: 1000;
+  }
+  .saturday{
+    display: block;
+    position: absolute;
+    top: 1600px;
+    z-index: 1000;
+  }
 }
